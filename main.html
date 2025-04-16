@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendações Personalizadas</title>
+    <style>
+        :root {
+            --primary: #0066cc;
+            --hover: #0052a3;
+            --bg: #f5f8fa;
+            --text: #2d3748;
+            --card: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            background: var(--card);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .search-box {
+            margin: 20px auto;
+            max-width: 500px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card-title {
+            color: var(--primary);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .view-button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .view-button svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .view-button:hover {
+            background: var(--hover);
+        }
+
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .modal-content {
+            position: relative;
+            width: 90%;
+            height: 90%;
+            margin: 2% auto;
+            background: white;
+            border-radius: 8px;
+        }
+
+        #closeModal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contentFrame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <img src="bml.png" alt="Logo BML" class="logo">
+            <h1>Recomendações Personalizadas</h1>
+        </div>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar por nome...">
+    </div>
+
+    <div id="cardsContainer" class="cards-container"></div>
+
+    <div id="modal">
+        <div class="modal-content">
+            <button id="closeModal">Fechar</button>
+            <iframe id="contentFrame"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Lista de recomendações baseada nos arquivos existentes
+        const recommendations = [
+            { id: 'afranio.esquerdo.viana', name: 'Afrânio Esquerdo Viana' },
+            { id: 'carlos_daniel.s', name: 'Carlos Daniel S.' },
+            { id: 'claytondomingues', name: 'Clayton Domingues' },
+            { id: 'daniel.lima.andrade', name: 'Daniel Lima Andrade' },
+            { id: 'edward.claver', name: 'Edward Claver' },
+            { id: 'ericklima.ca', name: 'Erick Lima' },
+            { id: 'franca.bandeira', name: 'França Bandeira' },
+            { id: 'hanna', name: 'Hanna' },
+            { id: 'isabellejardimf', name: 'Isabelle Jardim' },
+            { id: 'jclineu', name: 'JC Lineu' },
+            { id: 'joseplacido', name: 'José Plácido' },
+            { id: 'jossang3', name: 'Jossangela' },
+            { id: 'jullyennelima.campelo', name: 'Jullyenne Lima Campelo' },
+            { id: 'kennedyreis.m', name: 'Kennedy Reis' },
+            { id: 'ketlendavila', name: 'Ketlen Davila' },
+            { id: 'lucas.almeida.80', name: 'Lucas Almeida' },
+            { id: 'luckjuca', name: 'Luck Juca' },
+            { id: 'p_palmeira', name: 'P. Palmeira' },
+            { id: 'pauloigormoraes', name: 'Paulo Igor Moraes' }
+        ];
+
+        function createCard(recommendation) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <button class="view-button" onclick="showContent('recommendations/email_${recommendation.id}.html')" title="Ver Detalhes">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                    </svg>
+                </button>
+                <div class="card-title">${recommendation.name}</div>
+            `;
+            return card;
+        }
+
+        function showContent(path) {
+            const modal = document.getElementById('modal');
+            const frame = document.getElementById('contentFrame');
+            frame.src = path;
+            modal.style.display = 'block';
+        }
+
+        function filterRecommendations(searchTerm) {
+            const container = document.getElementById('cardsContainer');
+            container.innerHTML = '';
+            
+            const filtered = recommendations.filter(rec => 
+                rec.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            
+            filtered.forEach(rec => {
+                container.appendChild(createCard(rec));
+            });
+        }
+
+        // Event Listeners
+        document.getElementById('closeModal').onclick = function() {
+            const modal = document.getElementById('modal');
+            const frame = document.getElementById('contentFrame');
+            modal.style.display = 'none';
+            frame.src = '';
+        };
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            filterRecommendations(e.target.value);
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            filterRecommendations('');
+        });
+    </script>
+</body>
+</html>
