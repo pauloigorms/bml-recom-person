@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,166 +73,178 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Ricardo</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
-            </a>
-            <div class="promocao-texto"><strong>FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR</strong> - R$139.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Produto da marca Philips, que é uma das preferidas do cliente em eletroportáteis, e pode ser um bom complemento para o uso de dispositivos móveis.</div>
+            <div class="produto">
+                <strong class="promocao-texto">FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR - R$139.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Produto da marca Philips, que é uma das preferidas do cliente. O fone é um acessório complementar ideal para uso com dispositivos móveis, alinhando-se ao interesse por eletroportáteis.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">LIQUID MONDIAL TURBO L-1100-BI 1100W PT - R$258.00</strong>
+                <a href="https://www.bemol.com.br/liquidificador-mondial-turbo-inox-l-1100-bi-capacidade-2-litros-potencia-1100w-12-velocidades-preto/p?idsku=2858" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/9/209934/vitrine/209934.jpg" alt="LIQUID MONDIAL TURBO L-1100-BI 1100W PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIQUID MONDIAL TURBO L-1100-BI 1100W PT: Um eletroportátil da marca Mondial, que se encaixa na faixa de preço e no padrão de qualidade que o cliente valoriza. Ideal para preparar receitas de forma prática.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/liquidificador-mondial-127v-potencia-500w-60hz-vermelho-l-99-fr/p?idsku=3444" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212899/vitrine/212899.jpg" alt="LIQUID MONDIAL TURBO PW L-99 FR 500W VM"><br>
+                            <span class="">LIQUID MONDIAL TURBO PW L-99 FR 500W VM<br>
+                            R$174.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">FERVEDOR TRAMONTINA PARIS 1,9L 28531714 - R$64.00</strong>
+                <a href="https://www.bemol.com.br/fervedor-tramontina-paris-com-revestimento-antiaderente-14cm-1-9l-vermelho-28531714/p?idsku=4912" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220984/vitrine/220984.jpg" alt="FERVEDOR TRAMONTINA PARIS 1,9L 28531714"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FERVEDOR TRAMONTINA PARIS 1,9L 28531714: Fervedor da Tramontina, que combina qualidade e praticidade, ideal para o uso diário na cozinha, complementando as utilidades domésticas do cliente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fervedor-tramontina-paris-antiaderente-16cm-2-7l-vermelho-28531716/p?idsku=14433" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/1/221435/vitrine/221435.jpg" alt="FERVEDOR TRAMONTINA PARIS 28531716 VM"><br>
+                            <span class="">FERVEDOR TRAMONTINA PARIS 28531716 VM<br>
+                            R$79.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fervedor-tramontina-paris-antiaderente-12cm-1-2l-vermelho-28531712/p?idsku=14432" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/1/221434/vitrine/221434.jpg" alt="FERVEDOR TRAMONTINA PARIS 28531712 VM"><br>
+                            <span class="">FERVEDOR TRAMONTINA PARIS 28531712 VM<br>
+                            R$54.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fervedor-tramontina-turim-14cm-1-7l-antiaderente-vermelho-20332714/p?idsku=7479" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230176/vitrine/230176.jpg" alt="FERVEDOR TRAMONTINA PARIS 20332714 VM"><br>
+                            <span class="">FERVEDOR TRAMONTINA PARIS 20332714 VM<br>
+                            R$52.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">JG 5P UTENSÍLIOS TRAMONTINA 25199/007 PT - R$46.00</strong>
+                <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-05-pecas-ability-em-nylon-preto-25199007/p?idsku=2645" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/8/208261/vitrine/208261.jpg" alt="JG 5P UTENSÍLIOS TRAMONTINA 25199/007 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: JG 5P UTENSÍLIOS TRAMONTINA 25199/007 PT: Utensílios da marca Tramontina, que são conhecidos pela qualidade e durabilidade. Complementa a categoria de utilidades domésticas que o cliente já comprou.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR - R$66.00</strong>
+                <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PROTETOR ELET INTELBRAS 5T EPE205+ BR: Produto da Intelbras, que é uma marca confiável e preferida pelo cliente. O protetor é útil para proteger eletroportáteis, complementando as compras anteriores.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/protetor-eletronico-intelbras-epe-205-com-5-tomadas-cabo-1-metro-branco/p?idsku=25047" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220035/vitrine/220035.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE 205 BR"><br>
+                            <span class="">PROTETOR ELET INTELBRAS 5T EPE 205 BR<br>
+                            R$52.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-preto-epe-205-/p?idsku=4752" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220037/vitrine/220037.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ PT"><br>
+                            <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ PT<br>
+                            R$78.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">CARRO MATTEL HW CITY MINI C/5 1806 SORT - R$79.00</strong>
+                <a href="https://www.bemol.com.br/conjunto-de-carrinhos-hot-wheels-com-5-unidades-mattel-01806-sortido/p?idsku=30" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/5/1/1/51156/vitrine/51156.jpg" alt="CARRO MATTEL HW CITY MINI C/5 1806 SORT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CARRO MATTEL HW CITY MINI C/5 1806 SORT: Outro produto da Mattel, que complementa a coleção de carrinhos do cliente. A variedade e a faixa de preço estão dentro do padrão de consumo do cliente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/pacote-com-10-carrinhos-hot-wheels-mattel-54886/p?idsku=121" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/1/2/112622/vitrine/112622.jpg" alt="CARRO MATTEL HW MINI C/10 54886 SORT"><br>
+                            <span class="">CARRO MATTEL HW MINI C/10 54886 SORT<br>
+                            R$139.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">CARRO MATTEL HW MONSTER TRUCK FYJ44 SORT - R$49.00</strong>
+                <a href="https://www.bemol.com.br/carrinho-hot-wheels-monster-truck-mattel-fyj44-sortidos/p?idsku=11702" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201806/vitrine/201806.jpg" alt="CARRO MATTEL HW MONSTER TRUCK FYJ44 SORT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CARRO MATTEL HW MONSTER TRUCK FYJ44 SORT: Produto da marca Mattel, que o cliente já comprou anteriormente. O carrinho de brinquedo é ideal para crianças e se alinha ao interesse do cliente por brinquedos, especialmente carrinhos.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">QUEBRA-CABEÇA GROW 100P DINOSSAURO 02660 - R$29.00</strong>
+                <a href="https://www.bemol.com.br/quebra-cabeca-grow-100-pecas-dinossauros-02660/p?idsku=10892" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/7/6/176812/vitrine/176812.jpg" alt="QUEBRA-CABEÇA GROW 100P DINOSSAURO 02660"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: QUEBRA-CABEÇA GROW 100P DINOSSAURO 02660: Reflete o interesse do cliente por dinossauros, além de ser um brinquedo educativo que estimula a criatividade e o desenvolvimento cognitivo.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">KIT CARREGADOR ELG USB-A/LIGHTNING 1M BR - R$54.00</strong>
+                <a href="https://www.bemol.com.br/kit-carregador-de-parede-universal-recarga-sincronizacao-lightning-1m-elg/p?idsku=16058" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/6/226502/vitrine/226502.jpg" alt="KIT CARREGADOR ELG USB-A/LIGHTNING 1M BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: KIT CARREGADOR ELG USB-A/LIGHTNING 1M BR: Um acessório prático para carregar dispositivos, que se alinha ao interesse do cliente por tecnologia e eletroportáteis, além de estar na faixa de preço adequada.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">JG 9P FACAS TRAMONTINA 23498/048 PT - R$88.00</strong>
+                <a href="https://www.bemol.com.br/jogo-de-facas-9-pecas-tramontina-plenus-23498-048-preto/p?idsku=11719" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201937/vitrine/201937.jpg" alt="JG 9P FACAS TRAMONTINA 23498/048 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: JG 9P FACAS TRAMONTINA 23498/048 PT: Outro produto da Tramontina, que se alinha ao interesse do cliente por utilidades domésticas. As facas são essenciais para a cozinha e refletem a busca por qualidade.</div>
+                    </div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">CONTROLE SONY PS4 S/F JET BLACK* - R$349.00</strong>
+                <a href="https://www.bemol.com.br/controle-sem-fio-sony-ps4-jet-black/p?idsku=73491" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/9/269344/vitrine/269344.jpg" alt="CONTROLE SONY PS4 S/F JET BLACK*"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/carrinho-hot-wheels-monster-truck-mattel-fyj44-sortidos/p?idsku=11702" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201806/vitrine/201806.jpg" alt="CARRO MATTEL HW MONSTER TRUCK FYJ44 SORT"></div>
-            </a>
-            <div class=""><strong>CARRO MATTEL HW MONSTER TRUCK FYJ44 SORT</strong> - R$49.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CARRO MATTEL HW MONSTER TRUCK FYJ44 SORT: Produto da marca Mattel, que é uma das preferidas do cliente, e se encaixa na categoria de brinquedos, especialmente dinossauros e carrinhos, que são de seu interesse.</div>
+            <div class="produto off-target">
+                <strong class="">CADEIRA GAMER DAZZ X-ROCKER PT - R$836.00</strong>
+                <a href="https://www.bemol.com.br/cadeira-gamer-dazz-x-rocker-preto/p?idsku=42249" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224282/vitrine/224282.jpg" alt="CADEIRA GAMER DAZZ X-ROCKER PT"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/quebra-cabeca-grow-100-pecas-dinossauros-02660/p?idsku=10892" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/7/6/176812/vitrine/176812.jpg" alt="QUEBRA-CABEÇA GROW 100P DINOSSAURO 02660"></div>
-            </a>
-            <div class=""><strong>QUEBRA-CABEÇA GROW 100P DINOSSAURO 02660</strong> - R$29.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: QUEBRA-CABEÇA GROW 100P DINOSSAURO 02660: Um quebra-cabeça educativo que se alinha ao interesse do cliente por dinossauros, promovendo diversão e desenvolvimento cognitivo.</div>
+            <div class="produto off-target">
+                <strong class="">TV 43 SAMSUNG SMART LED FHD UN43T5300AGX - R$1799.00</strong>
+                <a href="https://www.bemol.com.br/smart-tv-samsung-43-full-hd-led-wi-fi-hdr-e-hdmi-un43t5300agxzd/p?idsku=2497" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/6/206124/vitrine/206124.jpg" alt="TV 43 SAMSUNG SMART LED FHD UN43T5300AGX"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/conjunto-de-carrinhos-hot-wheels-com-5-unidades-mattel-01806-sortido/p?idsku=30" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/5/1/1/51156/vitrine/51156.jpg" alt="CARRO MATTEL HW CITY MINI C/5 1806 SORT"></div>
-            </a>
-            <div class=""><strong>CARRO MATTEL HW CITY MINI C/5 1806 SORT</strong> - R$79.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CARRO MATTEL HW CITY MINI C/5 1806 SORT: Mais um produto da Mattel, ideal para complementar a coleção de carrinhos do cliente, oferecendo variedade e diversão.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/pacote-com-10-carrinhos-hot-wheels-mattel-54886/p?idsku=121" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/1/2/112622/vitrine/112622.jpg" alt="CARRO MATTEL HW MINI C/10 54886 SORT"><br>
-                        <span class="">CARRO MATTEL HW MINI C/10 54886 SORT<br>
-                        R$139.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-127v-1200w-branco-fx1000/p?idsku=2014" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/9/199240/vitrine/199240.jpg" alt="FERRO B+D VAPOR FX1000-BR BR/RX"></div>
-            </a>
-            <div class=""><strong>FERRO B+D VAPOR FX1000-BR BR/RX</strong> - R$94.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR FX1000-BR BR/RX: Um eletroportátil da Black+Decker, que é uma marca confiável e que o cliente já comprou anteriormente, oferecendo praticidade e eficiência.</div>
+            <div class="produto off-target">
+                <strong class="">PELÍCULA AMET NANOTECH HD NE - R$59.00</strong>
+                <a href="https://www.bemol.com.br/pelicula-amet-nanotech-hd-new-edition-3-geracao-581/p?idsku=44673" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/0/240687/vitrine/240687.jpg" alt="PELÍCULA AMET NANOTECH HD NE"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"></div>
-            </a>
-            <div class=""><strong>PROTETOR ELET INTELBRAS 5T EPE205+ BR</strong> - R$66.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PROTETOR ELET INTELBRAS 5T EPE205+ BR: Um produto de utilidade doméstica que complementa a segurança dos eletroportáteis do cliente, alinhando-se ao seu interesse por produtos práticos.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-preto-epe-205-/p?idsku=4752" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220037/vitrine/220037.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ PT"><br>
-                        <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ PT<br>
-                        R$78.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/protetor-eletronico-intelbras-epe-205-com-5-tomadas-cabo-1-metro-branco/p?idsku=25047" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220035/vitrine/220035.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE 205 BR"><br>
-                        <span class="">PROTETOR ELET INTELBRAS 5T EPE 205 BR<br>
-                        R$52.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-05-pecas-ability-em-nylon-preto-25199007/p?idsku=2645" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/8/208261/vitrine/208261.jpg" alt="JG 5P UTENSÍLIOS TRAMONTINA 25199/007 PT"></div>
-            </a>
-            <div class=""><strong>JG 5P UTENSÍLIOS TRAMONTINA 25199/007 PT</strong> - R$46.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: JG 5P UTENSÍLIOS TRAMONTINA 25199/007 PT: Utensílios de cozinha da Tramontina, que é uma marca de qualidade e que se encaixa nas utilidades domésticas que o cliente costuma adquirir.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/liquidificador-mondial-turbo-inox-l-1100-bi-capacidade-2-litros-potencia-1100w-12-velocidades-preto/p?idsku=2858" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/9/209934/vitrine/209934.jpg" alt="LIQUID MONDIAL TURBO L-1100-BI 1100W PT"></div>
-            </a>
-            <div class=""><strong>LIQUID MONDIAL TURBO L-1100-BI 1100W PT</strong> - R$258.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIQUID MONDIAL TURBO L-1100-BI 1100W PT: Um liquidificador da Mondial, que é uma marca que o cliente já comprou, oferecendo potência e versatilidade para a cozinha.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/liquidificador-mondial-127v-potencia-500w-60hz-vermelho-l-99-fr/p?idsku=3444" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212899/vitrine/212899.jpg" alt="LIQUID MONDIAL TURBO PW L-99 FR 500W VM"><br>
-                        <span class="">LIQUID MONDIAL TURBO PW L-99 FR 500W VM<br>
-                        R$174.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fervedor-tramontina-paris-com-revestimento-antiaderente-14cm-1-9l-vermelho-28531714/p?idsku=4912" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220984/vitrine/220984.jpg" alt="FERVEDOR TRAMONTINA PARIS 1,9L 28531714"></div>
-            </a>
-            <div class=""><strong>FERVEDOR TRAMONTINA PARIS 1,9L 28531714</strong> - R$64.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FERVEDOR TRAMONTINA PARIS 1,9L 28531714: Um fervedor da Tramontina, que combina qualidade e design, ideal para complementar as utilidades domésticas do cliente.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/fervedor-tramontina-turim-14cm-1-7l-antiaderente-vermelho-20332714/p?idsku=7479" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230176/vitrine/230176.jpg" alt="FERVEDOR TRAMONTINA PARIS 20332714 VM"><br>
-                        <span class="">FERVEDOR TRAMONTINA PARIS 20332714 VM<br>
-                        R$52.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/fervedor-tramontina-paris-antiaderente-16cm-2-7l-vermelho-28531716/p?idsku=14433" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/1/221435/vitrine/221435.jpg" alt="FERVEDOR TRAMONTINA PARIS 28531716 VM"><br>
-                        <span class="">FERVEDOR TRAMONTINA PARIS 28531716 VM<br>
-                        R$79.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/fervedor-tramontina-paris-antiaderente-12cm-1-2l-vermelho-28531712/p?idsku=14432" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/1/221434/vitrine/221434.jpg" alt="FERVEDOR TRAMONTINA PARIS 28531712 VM"><br>
-                        <span class="">FERVEDOR TRAMONTINA PARIS 28531712 VM<br>
-                        R$54.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/forma-para-air-fryer-hauskraft-quadrado-vermelho-slcn043/p?idsku=10593" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/1/241513/vitrine/241513.jpg" alt="FORMA HAUSKRAFT P/AFRYER QUAD SLCN043/VM"></div>
-            </a>
-            <div class=""><strong>FORMA HAUSKRAFT P/AFRYER QUAD SLCN043/VM</strong> - R$62.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FORMA HAUSKRAFT P/AFRYER QUAD SLCN043/VM: Um acessório para air fryer, que complementa a experiência de cozinhar de forma saudável, alinhando-se ao interesse do cliente por eletroportáteis.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/forma-para-air-fryer-hauskraft-quadrado-preto-slcn043/p?idsku=10592" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/1/241512/vitrine/241512.jpg" alt="FORMA HAUSKRAFT P/AFRYER QUAD SLCN043/PT"><br>
-                        <span class="">FORMA HAUSKRAFT P/AFRYER QUAD SLCN043/PT<br>
-                        R$62.00</span>
-                    </a>
-                </div>
-                </div></div>
         <p></p>
     </body>
     </html>

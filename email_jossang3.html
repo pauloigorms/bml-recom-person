@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,172 +73,171 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Jossan</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
-            </a>
-            <div class="promocao-texto"><strong>FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR</strong> - R$139.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Fone de ouvido sem fio da Philips, que oferece qualidade sonora e praticidade, ideal para o cliente que valoriza tecnologia e conforto em produtos de áudio.</div>
+            <div class="produto">
+                <strong class="promocao-texto">FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR - R$139.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Fone de ouvido sem fio da Philips, que oferece qualidade de áudio e é um acessório complementar ideal para o uso com dispositivos móveis.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">PROTETOR ELET INTELBRAS 5T EPE 205 BR - R$52.00</strong>
+                <a href="https://www.bemol.com.br/protetor-eletronico-intelbras-epe-205-com-5-tomadas-cabo-1-metro-branco/p?idsku=25047" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220035/vitrine/220035.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE 205 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PROTETOR ELET INTELBRAS 5T EPE 205 BR: Produto da marca Intelbras, que oferece proteção para equipamentos eletrônicos, ideal para complementar a compra de produtos de informática.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"><br>
+                            <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR<br>
+                            R$66.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"><br>
+                            <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR<br>
+                            R$66.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"><br>
+                            <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR<br>
+                            R$66.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">MULTIFUNCIONAL HP SMART TANK 584 CZ AG - R$999.00</strong>
+                <a href="https://www.bemol.com.br/impressora-multifuncional-hp-smart-tank-584-cinza/p?idsku=27777" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/0/240274/vitrine/240274.jpg" alt="MULTIFUNCIONAL HP SMART TANK 584 CZ AG"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: MULTIFUNCIONAL HP SMART TANK 584 CZ AG: Impressora multifuncional da HP, que se encaixa na categoria de informática e é ideal para o uso doméstico, complementando as necessidades do cliente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">VENT MESA 50 BAUMON 2EM1 FW10595 PT - R$249.00</strong>
+                <a href="https://www.bemol.com.br/vertilador-de-mesa-50cm-baumon-2-em-1-127v-preto-fw010595/p?idsku=51722" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/2/252881/vitrine/252881.jpg" alt="VENT MESA 50 BAUMON 2EM1 FW10595 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: VENT MESA 50 BAUMON 2EM1 FW10595 PT: Ventilador de mesa e parede, que se alinha ao estilo de eletroportáteis que o cliente já comprou, oferecendo conforto em dias quentes.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">ROTEADOR INTELBRAS WIRELESS WF W5-1200F - R$226.00</strong>
+                <a href="https://www.bemol.com.br/roteador-wireless-intelbras-wi-force-preto-w5-1200f/p?idsku=13592" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/7/217327/vitrine/217327.jpg" alt="ROTEADOR INTELBRAS WIRELESS WF W5-1200F"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: ROTEADOR INTELBRAS WIRELESS WF W5-1200F: Produto da marca Intelbras, que o cliente já adquiriu anteriormente. O preço está dentro da faixa habitual para produtos de informática e complementa a necessidade de conectividade.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/roteador-wireless-intelbras-wi-force-preto-w4-300f/p?idsku=4222" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/7/217326/vitrine/217326.jpg" alt="ROTEADOR INTELBRAS WIRELESS WF W4-300F"><br>
+                            <span class="">ROTEADOR INTELBRAS WIRELESS WF W4-300F<br>
+                            R$149.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">PORTA FRIOS COZA COZY DP 10180/3465 VM - R$44.00</strong>
+                <a href="https://www.bemol.com.br/porta-frios-coza-duplo-cozy-vermelho-10180-3465/p?idsku=5618" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224008/vitrine/224008.jpg" alt="PORTA FRIOS COZA COZY DP 10180/3465 VM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PORTA FRIOS COZA COZY DP 10180/3465 VM: Produto de utilidade doméstica na cor vermelha, que combina com o estilo de organização e praticidade que o cliente busca.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">PEGADOR P/MASSA TRAMONTINA 63800/605 IN - R$16.00</strong>
+                <a href="https://www.bemol.com.br/pegador-de-massa-utility-em-aco-inox-tramontina-63800-605/p?idsku=11720" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201962/vitrine/201962.jpg" alt="PEGADOR P/MASSA TRAMONTINA 63800/605 IN"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PEGADOR P/MASSA TRAMONTINA 63800/605 IN: Utensílio de cozinha da marca Tramontina, que complementa a compra de panelas e outros utensílios, alinhando-se ao padrão de utilidade doméstica do cliente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">PANQUEQUEIRA TRAMONTINA TURIM 20264/722 - R$44.00</strong>
+                <a href="https://www.bemol.com.br/panquequeira-e-tapioqueira-tramontina-turim-vermelho-20264-722/p?idsku=2092" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201231/vitrine/201231.jpg" alt="PANQUEQUEIRA TRAMONTINA TURIM 20264/722"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PANQUEQUEIRA TRAMONTINA TURIM 20264/722: Produto da marca Tramontina, que o cliente já comprou. A cor vermelha é vibrante e se alinha ao estilo de utilidades domésticas que o cliente aprecia.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/frigideira-tramontina-turim-20260624/p?idsku=10995" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184379/vitrine/184379.jpg" alt="FRIGIDEIRA TRAMONTINA 24 20260/624 PT"><br>
+                            <span class="">FRIGIDEIRA TRAMONTINA 24 20260/624 PT<br>
+                            R$44.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20260724/p?idsku=10996" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184380/vitrine/184380.jpg" alt="FRIGIDEIRA TRAMONTINA 24 20260/724 VM"><br>
+                            <span class="">FRIGIDEIRA TRAMONTINA 24 20260/724 VM<br>
+                            R$44.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20260716/p?idsku=10992" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184376/vitrine/184376.jpg" alt="FRIGIDEIRA TRAMONTINA 16 20260/716 VM"><br>
+                            <span class="">FRIGIDEIRA TRAMONTINA 16 20260/716 VM<br>
+                            R$28.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">BONECA ELKA PEPPA PRINCESA PEPPA PIG 997 - R$54.00</strong>
+                <a href="https://www.bemol.com.br/boneca-peppa-pig-princesa-elka-plastico-15cm-997/p?idsku=1596" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/6/186885/vitrine/186885.jpg" alt="BONECA ELKA PEPPA PRINCESA PEPPA PIG 997"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: BONECA ELKA PEPPA PRINCESA PEPPA PIG 997: Produto que pode interessar ao cliente, considerando o histórico de compras que inclui itens para crianças, promovendo atividades criativas.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">LIQUID MALLORY TAURUS 1300W VM - R$186.00</strong>
+                <a href="https://www.bemol.com.br/liquidificador-mallory-taurus-1-8l-1300w-127v-vermelho-b91202001/p?idsku=11379" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/6/196315/vitrine/196315.jpg" alt="LIQUID MALLORY TAURUS 1300W VM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIQUID MALLORY TAURUS 1300W VM: Liquidificador de alta potência, ideal para o cliente que valoriza praticidade e eficiência na cozinha. A cor vermelha é uma preferência do cliente.</div>
+                    </div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">CADEIRA GAMER DAZZ X-ROCKER PT - R$836.00</strong>
+                <a href="https://www.bemol.com.br/cadeira-gamer-dazz-x-rocker-preto/p?idsku=42249" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224282/vitrine/224282.jpg" alt="CADEIRA GAMER DAZZ X-ROCKER PT"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/protetor-eletronico-intelbras-epe-205-com-5-tomadas-cabo-1-metro-branco/p?idsku=25047" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220035/vitrine/220035.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE 205 BR"></div>
-            </a>
-            <div class=""><strong>PROTETOR ELET INTELBRAS 5T EPE 205 BR</strong> - R$52.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PROTETOR ELET INTELBRAS 5T EPE 205 BR: Produto da marca Intelbras, que o cliente já comprou anteriormente, e que se encaixa na categoria de informática, refletindo a preferência por produtos práticos e de qualidade.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"><br>
-                        <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR<br>
-                        R$66.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"><br>
-                        <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR<br>
-                        R$66.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"><br>
-                        <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR<br>
-                        R$66.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/protetor-intelbras-eletronico-com-5-tomadas-branco-epe-205-/p?idsku=25048" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220036/vitrine/220036.jpg" alt="PROTETOR ELET INTELBRAS 5T EPE205+ BR"><br>
-                        <span class="">PROTETOR ELET INTELBRAS 5T EPE205+ BR<br>
-                        R$66.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/panquequeira-e-tapioqueira-tramontina-turim-vermelho-20264-722/p?idsku=2092" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201231/vitrine/201231.jpg" alt="PANQUEQUEIRA TRAMONTINA TURIM 20264/722"></div>
-            </a>
-            <div class=""><strong>PANQUEQUEIRA TRAMONTINA TURIM 20264/722</strong> - R$44.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PANQUEQUEIRA TRAMONTINA TURIM 20264/722: A panquequeira da Tramontina é uma adição prática à cozinha, alinhada com a preferência do cliente por utensílios de cozinha de qualidade e design moderno.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20260716/p?idsku=10992" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184376/vitrine/184376.jpg" alt="FRIGIDEIRA TRAMONTINA 16 20260/716 VM"><br>
-                        <span class="">FRIGIDEIRA TRAMONTINA 16 20260/716 VM<br>
-                        R$28.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20260724/p?idsku=10996" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184380/vitrine/184380.jpg" alt="FRIGIDEIRA TRAMONTINA 24 20260/724 VM"><br>
-                        <span class="">FRIGIDEIRA TRAMONTINA 24 20260/724 VM<br>
-                        R$44.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/frigideira-tramontina-turim-20260624/p?idsku=10995" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184379/vitrine/184379.jpg" alt="FRIGIDEIRA TRAMONTINA 24 20260/624 PT"><br>
-                        <span class="">FRIGIDEIRA TRAMONTINA 24 20260/624 PT<br>
-                        R$44.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-127v-1200w-branco-fx1000/p?idsku=2014" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/9/199240/vitrine/199240.jpg" alt="FERRO B+D VAPOR FX1000-BR BR/RX"></div>
-            </a>
-            <div class=""><strong>FERRO B+D VAPOR FX1000-BR BR/RX</strong> - R$94.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR FX1000-BR BR/RX: Um eletroportátil da marca Black+Decker, que combina praticidade e eficiência, ideal para o cliente que valoriza produtos de qualidade para o dia a dia.</div>
+            <div class="produto off-target">
+                <strong class="">CONSOLE SONY PS5 SLIM DISC BUNDLE 1TB(RC - R$3999.00</strong>
+                <a href="https://www.bemol.com.br/console-playstation-5-slim-returnal-e-ratchet-clank-1tb/p?idsku=18986" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239748/vitrine/239748.jpg" alt="CONSOLE SONY PS5 SLIM DISC BUNDLE 1TB(RC"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/boneca-peppa-pig-princesa-elka-plastico-15cm-997/p?idsku=1596" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/6/186885/vitrine/186885.jpg" alt="BONECA ELKA PEPPA PRINCESA PEPPA PIG 997"></div>
-            </a>
-            <div class=""><strong>BONECA ELKA PEPPA PRINCESA PEPPA PIG 997</strong> - R$54.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: BONECA ELKA PEPPA PRINCESA PEPPA PIG 997: Produto que pode interessar ao cliente por seu histórico de compras, refletindo um interesse em brinquedos educativos e criativos, especialmente para crianças.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/conversor-digital-aquario-full-hd-4k-central-de-midia-entrada-usb-saida-hdmi-preto-dtv-9000/p?idsku=4814" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220340/vitrine/220340.jpg" alt="CONVERSOR DIGITAL AQUÁRIO FHD DTV9000"></div>
-            </a>
-            <div class=""><strong>CONVERSOR DIGITAL AQUÁRIO FHD DTV9000</strong> - R$129.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CONVERSOR DIGITAL AQUÁRIO FHD DTV9000: Um produto que complementa a experiência de entretenimento em casa, ideal para quem busca qualidade de imagem e praticidade, alinhando-se ao interesse do cliente por tecnologia.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/porta-frios-coza-duplo-cozy-vermelho-10180-3465/p?idsku=5618" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224008/vitrine/224008.jpg" alt="PORTA FRIOS COZA COZY DP 10180/3465 VM"></div>
-            </a>
-            <div class=""><strong>PORTA FRIOS COZA COZY DP 10180/3465 VM</strong> - R$44.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PORTA FRIOS COZA COZY DP 10180/3465 VM: Um acessório de cozinha prático e funcional, que se alinha ao estilo de vida do cliente, que valoriza a organização e a praticidade na cozinha.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/colher-para-arroz-tramontina-extrata-63815-101-aco-inox/p?idsku=1605" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187603/vitrine/187603.jpg" alt="COLHER P/ARROZ TRAMONTINA 63815/101 IN"></div>
-            </a>
-            <div class=""><strong>COLHER P/ARROZ TRAMONTINA 63815/101 IN</strong> - R$18.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: COLHER P/ARROZ TRAMONTINA 63815/101 IN: Um utensílio de cozinha da Tramontina, que combina qualidade e praticidade, ideal para o cliente que já demonstrou interesse em produtos dessa marca.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/concha-para-servir-terrina-extrata-tramontina-63815-091-aco-inox/p?idsku=1604" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187602/vitrine/187602.jpg" alt="CONCHA TRAMONTINA EXTRATA 63815/091 IN"><br>
-                        <span class="">CONCHA TRAMONTINA EXTRATA 63815/091 IN<br>
-                        R$38.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/escumadeira-tramontina-extrata-63815-221-aco-inox/p?idsku=1606" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187604/vitrine/187604.jpg" alt="ESPUMADEIRA TRAMONTINA 63815/221 IN"><br>
-                        <span class="">ESPUMADEIRA TRAMONTINA 63815/221 IN<br>
-                        R$22.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/conjunto-de-utensilios-para-cozinha-3-pecas-tramontina-extrata-66815-730-aco-inox/p?idsku=1607" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187605/vitrine/187605.jpg" alt="CJ 3P UTENSÍLIOS TRAMONTINA 66815/730 IN"><br>
-                        <span class="">CJ 3P UTENSÍLIOS TRAMONTINA 66815/730 IN<br>
-                        R$78.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/vertilador-de-mesa-50cm-baumon-2-em-1-127v-preto-fw010595/p?idsku=51722" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/2/252881/vitrine/252881.jpg" alt="VENT MESA 50 BAUMON 2EM1 FW10595 PT"></div>
-            </a>
-            <div class=""><strong>VENT MESA 50 BAUMON 2EM1 FW10595 PT</strong> - R$249.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: VENT MESA 50 BAUMON 2EM1 FW10595 PT: Ventilador 2 em 1 que oferece versatilidade e eficiência, ideal para o cliente que busca conforto em dias quentes, refletindo sua preferência por eletroportáteis práticos.</div>
+            <div class="produto off-target">
+                <strong class="">CARTEIRA TOMMY HILFIGER COURO PT (BI) - R$199.00</strong>
+                <a href="https://www.bemol.com.br/carteira-tommy-hilfiger-couro-pt--bi-/p?idsku=50332" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/0/250281/vitrine/250281.jpg" alt="CARTEIRA TOMMY HILFIGER COURO PT (BI)"></div>
+                </a>
             </div>
         <p></p>
     </body>

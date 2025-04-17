@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,125 +73,153 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Clayton</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
-            </a>
-            <div class="promocao-texto"><strong>FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR</strong> - R$139.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Produto de tecnologia que complementa a compra do iPad, oferecendo uma experiência auditiva de qualidade, ideal para uso em atividades de lazer e esportes.</div>
+            <div class="produto">
+                <strong class="promocao-texto">FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR - R$139.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Produto de tecnologia que complementa o uso de tablets e impressoras, com design moderno e funcional, alinhado ao gosto do cliente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">JG MATTEL CARTAS UNO ORIGINAL W2085 - R$26.00</strong>
+                <a href="https://www.bemol.com.br/jogo-mattel-uno-original-w2085/p?idsku=10930" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/7/9/179996/vitrine/179996.jpg" alt="JG MATTEL CARTAS UNO ORIGINAL W2085"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: JG MATTEL CARTAS UNO ORIGINAL W2085: Jogo de cartas que promove diversão em família, ideal para complementar o interesse do cliente por brinquedos e jogos.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">CESTO UZ MULTIUSO C/T 55L UZ373 RO - R$88.00</strong>
+                <a href="https://www.bemol.com.br/cesto-multiuso-uz-com-tampa-55-litros-uz373-rosa/p?idsku=44450" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/2/202564/vitrine/202564.jpg" alt="CESTO UZ MULTIUSO C/T 55L UZ373 RO"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CESTO UZ MULTIUSO C/T 55L UZ373 RO: Cesto multiuso que atende à necessidade de organização, com design moderno e capacidade adequada, alinhado ao estilo do cliente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">FORMA NADIR RET 750ML GD16214013N - R$36.00</strong>
+                <a href="https://www.bemol.com.br/forma-retangular-750ml-marinex-nadir-figueiredo-gd16214013n/p?idsku=28655" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/0/200641/vitrine/200641.jpg" alt="FORMA NADIR RET 750ML GD16214013N"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FORMA NADIR RET 750ML GD16214013N: Forma de vidro que se encaixa na faixa de preço e utilidade doméstica, ideal para o cliente que valoriza praticidade e qualidade na cozinha.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">FERRO B+D VAPOR SPEED FX3060 BR/AZ - R$169.00</strong>
+                <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-1200w-branco-e-azul-fx3060/p?idsku=2343" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204804/vitrine/204804.jpg" alt="FERRO B+D VAPOR SPEED FX3060 BR/AZ"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR SPEED FX3060 BR/AZ: Ferro de passar com boa avaliação e características que atendem à busca por praticidade e eficiência no dia a dia.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">TÁBUA TRAMONTINA P/ANTEPASTO 13412351 - R$106.00</strong>
+                <a href="https://www.bemol.com.br/tabua-tramontina-para-antepasto-13412351/p?idsku=18946" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239365/vitrine/239365.jpg" alt="TÁBUA TRAMONTINA P/ANTEPASTO 13412351"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: TÁBUA TRAMONTINA P/ANTEPASTO 13412351: Produto de utilidade doméstica que combina qualidade e funcionalidade, ideal para o cliente que aprecia cozinhar e receber.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">COLCHA KING BUDDEMEYR IN DES 230/280 LJ - R$278.00</strong>
+                <a href="https://www.bemol.com.br/colcha-king-buddemeyer-in-design-100-algodao-laranja/p?idsku=25558" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/3/223817/vitrine/223817.jpg" alt="COLCHA KING BUDDEMEYR IN DES 230/280 LJ"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: COLCHA KING BUDDEMEYR IN DES 230/280 LJ: Colcha de algodão que oferece conforto e estilo, adequada ao gosto do cliente por produtos de qualidade para a casa.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/colcha-king-buddemeyer-in-design-100-algodao-bege/p?idsku=25557" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/3/223816/vitrine/223816.jpg" alt="COLCHA KING BUDDEMEYR IN DES 230/280 BG"><br>
+                            <span class="">COLCHA KING BUDDEMEYR IN DES 230/280 BG<br>
+                            R$282.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">BONECA MATTEL BARBIE ANTASIA JDM67 - R$69.00</strong>
+                <a href="https://www.bemol.com.br/boneca-mattel-barbie-fantasia-jdm67-sortido/p?idsku=78389" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/7/1/271001/vitrine/271001.jpg" alt="BONECA MATTEL BARBIE ANTASIA JDM67"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: BONECA MATTEL BARBIE ANTASIA JDM67: Brinquedo de marca preferida, que se alinha ao interesse do cliente por produtos de qualidade para crianças.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">LIXEIRA 30L TRAMONTINA C/P 94538/130 IN - R$369.00</strong>
+                <a href="https://www.bemol.com.br/lixeira-30-litros-tramontina-94538-130-30-cm-com-pedal-inox/p?idsku=1270" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165185/vitrine/165185.jpg" alt="LIXEIRA 30L TRAMONTINA C/P 94538/130 IN"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIXEIRA 30L TRAMONTINA C/P 94538/130 IN: Lixeira de alta qualidade e design moderno, que atende à necessidade de organização e estética na casa do cliente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/lixeira-20-litros-tramontina-com-pedal-e-alca-para-transporte-94538-120-inox/p?idsku=1269" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165184/vitrine/165184.jpg" alt="LIXEIRA 20L TRAMONTINA C/P 94538/120 IN"><br>
+                            <span class="">LIXEIRA 20L TRAMONTINA C/P 94538/120 IN<br>
+                            R$264.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/lixeira-12-litros-tramontina-com-pedal-e-alca-para-transporte-94538-112-inox/p?idsku=1268" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165183/vitrine/165183.jpg" alt="LIXEIRA 12L TRAMONTINA C/P 94538/112 IN"><br>
+                            <span class="">LIXEIRA 12L TRAMONTINA C/P 94538/112 IN<br>
+                            R$192.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">FAQUEIRO 24P TRAMONTINA 23798/046 IN - R$108.00</strong>
+                <a href="https://www.bemol.com.br/conjunto-de-talheres-tramontina-24-pecas-malibu-inox-23798-04/p?idsku=2128" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201938/vitrine/201938.jpg" alt="FAQUEIRO 24P TRAMONTINA 23798/046 IN"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FAQUEIRO 24P TRAMONTINA 23798/046 IN: Faqueiro de inox que combina qualidade e sofisticação, ideal para o cliente que valoriza utensílios de mesa elegantes.</div>
+                    </div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">HEADPHONE JBL BT T520 PT - R$289.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-preto-520bt/p?idsku=903" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230423/vitrine/230423.jpg" alt="HEADPHONE JBL BT T520 PT"></div>
+                </a>
+            <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-azul-520bt/p?idsku=904" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230424/vitrine/230424.jpg" alt="HEADPHONE JBL BT T520 AZ"><br>
+                            <span class="">HEADPHONE JBL BT T520 AZ<br>
+                            R$289.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto off-target">
+                <strong class="">CONTROLE SONY PS4 S/F JET BLACK* - R$349.00</strong>
+                <a href="https://www.bemol.com.br/controle-sem-fio-sony-ps4-jet-black/p?idsku=73491" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/9/269344/vitrine/269344.jpg" alt="CONTROLE SONY PS4 S/F JET BLACK*"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/forma-retangular-750ml-marinex-nadir-figueiredo-gd16214013n/p?idsku=28655" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/0/200641/vitrine/200641.jpg" alt="FORMA NADIR RET 750ML GD16214013N"></div>
-            </a>
-            <div class=""><strong>FORMA NADIR RET 750ML GD16214013N</strong> - R$36.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FORMA NADIR RET 750ML GD16214013N: Forma de vidro que se alinha com a preferência do cliente por utilidades domésticas práticas e de qualidade, ideal para preparar refeições em casa.</div>
+            <div class="produto off-target">
+                <strong class="">TV 43 SAMSUNG SMART LED FHD UN43T5300AGX - R$1799.00</strong>
+                <a href="https://www.bemol.com.br/smart-tv-samsung-43-full-hd-led-wi-fi-hdr-e-hdmi-un43t5300agxzd/p?idsku=2497" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/6/206124/vitrine/206124.jpg" alt="TV 43 SAMSUNG SMART LED FHD UN43T5300AGX"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/lixeira-30-litros-tramontina-94538-130-30-cm-com-pedal-inox/p?idsku=1270" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165185/vitrine/165185.jpg" alt="LIXEIRA 30L TRAMONTINA C/P 94538/130 IN"></div>
-            </a>
-            <div class=""><strong>LIXEIRA 30L TRAMONTINA C/P 94538/130 IN</strong> - R$369.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIXEIRA 30L TRAMONTINA C/P 94538/130 IN: Lixeira de alta qualidade que atende à necessidade de organização e praticidade em casa, refletindo o padrão de compras do cliente.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/lixeira-20-litros-tramontina-com-pedal-e-alca-para-transporte-94538-120-inox/p?idsku=1269" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165184/vitrine/165184.jpg" alt="LIXEIRA 20L TRAMONTINA C/P 94538/120 IN"><br>
-                        <span class="">LIXEIRA 20L TRAMONTINA C/P 94538/120 IN<br>
-                        R$264.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/lixeira-12-litros-tramontina-com-pedal-e-alca-para-transporte-94538-112-inox/p?idsku=1268" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165183/vitrine/165183.jpg" alt="LIXEIRA 12L TRAMONTINA C/P 94538/112 IN"><br>
-                        <span class="">LIXEIRA 12L TRAMONTINA C/P 94538/112 IN<br>
-                        R$192.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/tabua-tramontina-para-antepasto-13412351/p?idsku=18946" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239365/vitrine/239365.jpg" alt="TÁBUA TRAMONTINA P/ANTEPASTO 13412351"></div>
-            </a>
-            <div class=""><strong>TÁBUA TRAMONTINA P/ANTEPASTO 13412351</strong> - R$106.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: TÁBUA TRAMONTINA P/ANTEPASTO 13412351: Produto que complementa a experiência na cozinha, ideal para o cliente que valoriza a funcionalidade e o design moderno em utilidades domésticas.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/cesto-multiuso-uz-com-tampa-55-litros-uz373-rosa/p?idsku=44450" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/2/202564/vitrine/202564.jpg" alt="CESTO UZ MULTIUSO C/T 55L UZ373 RO"></div>
-            </a>
-            <div class=""><strong>CESTO UZ MULTIUSO C/T 55L UZ373 RO</strong> - R$88.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CESTO UZ MULTIUSO C/T 55L UZ373 RO: Cesto multiuso que se encaixa na necessidade de organização, especialmente para brinquedos, alinhando-se ao histórico de compras do cliente.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-1200w-branco-e-azul-fx3060/p?idsku=2343" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204804/vitrine/204804.jpg" alt="FERRO B+D VAPOR SPEED FX3060 BR/AZ"></div>
-            </a>
-            <div class=""><strong>FERRO B+D VAPOR SPEED FX3060 BR/AZ</strong> - R$169.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR SPEED FX3060 BR/AZ: Ferro de passar que combina praticidade e eficiência, ideal para o cliente que valoriza produtos que facilitam o dia a dia em casa.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/conjunto-de-talheres-tramontina-24-pecas-malibu-inox-23798-04/p?idsku=2128" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201938/vitrine/201938.jpg" alt="FAQUEIRO 24P TRAMONTINA 23798/046 IN"></div>
-            </a>
-            <div class=""><strong>FAQUEIRO 24P TRAMONTINA 23798/046 IN</strong> - R$108.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FAQUEIRO 24P TRAMONTINA 23798/046 IN: Conjunto de talheres que traz sofisticação e qualidade para as refeições, alinhando-se ao padrão de compras do cliente em utilidades domésticas.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/colcha-king-buddemeyer-in-design-100-algodao-laranja/p?idsku=25558" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/3/223817/vitrine/223817.jpg" alt="COLCHA KING BUDDEMEYR IN DES 230/280 LJ"></div>
-            </a>
-            <div class=""><strong>COLCHA KING BUDDEMEYR IN DES 230/280 LJ</strong> - R$278.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: COLCHA KING BUDDEMEYR IN DES 230/280 LJ: Colcha de alta qualidade que reflete o gosto do cliente por conforto e estilo em produtos têxteis, ideal para a decoração do quarto.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/colcha-king-buddemeyer-in-design-100-algodao-bege/p?idsku=25557" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/3/223816/vitrine/223816.jpg" alt="COLCHA KING BUDDEMEYR IN DES 230/280 BG"><br>
-                        <span class="">COLCHA KING BUDDEMEYR IN DES 230/280 BG<br>
-                        R$282.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/boneca-mattel-barbie-fantasia-jdm67-sortido/p?idsku=78389" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/7/1/271001/vitrine/271001.jpg" alt="BONECA MATTEL BARBIE ANTASIA JDM67"></div>
-            </a>
-            <div class=""><strong>BONECA MATTEL BARBIE ANTASIA JDM67</strong> - R$69.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: BONECA MATTEL BARBIE ANTASIA JDM67: Brinquedo que complementa as compras anteriores de bonecas, ideal para presentear ou para uso próprio, alinhando-se ao interesse do cliente por brinquedos.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/jogo-mattel-uno-original-w2085/p?idsku=10930" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/7/9/179996/vitrine/179996.jpg" alt="JG MATTEL CARTAS UNO ORIGINAL W2085"></div>
-            </a>
-            <div class=""><strong>JG MATTEL CARTAS UNO ORIGINAL W2085</strong> - R$26.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: JG MATTEL CARTAS UNO ORIGINAL W2085: Jogo de cartas que promove interação e diversão, ideal para complementar as compras de brinquedos e atividades de lazer em família.</div>
+            <div class="produto off-target">
+                <strong class="">VIOLÃO ACÚS ARTILUX 6 CORDAS ATL831 (MP) - R$223.00</strong>
+                <a href="https://www.bemol.com.br/violao-acustico-artilux-6-cordas-atl831--mp-/p?idsku=65788" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/4/264454/vitrine/264454.jpg" alt="VIOLÃO ACÚS ARTILUX 6 CORDAS ATL831 (MP)"></div>
+                </a>
             </div>
         <p></p>
     </body>

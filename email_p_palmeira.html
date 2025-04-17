@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,133 +73,177 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Paulo</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/smartphone-samsung-galaxy-a16-4gb-ram-128gb-preto/p?idsku=65928" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263302/vitrine/263302.jpg" alt="SMARTPHONE SAMSUNG A16 4/128GB PT"></div>
-            </a>
-            <div class="promocao-texto"><strong>SMARTPHONE SAMSUNG A16 4/128GB PT</strong> - R$1279.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SMARTPHONE SAMSUNG A16 4/128GB PT: O smartphone da Samsung é uma escolha que se alinha com a preferência do cliente por tecnologia e pela marca. O preço está dentro da faixa que ele costuma pagar por dispositivos móveis.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/smartphone-samsung-galaxy-a16-4gb-ram-128gb-cinza/p?idsku=65927" target="_blank">
-                        <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263301/vitrine/263301.jpg" alt="SMARTPHONE SAMSUNG A16 4/128GB CZ"><br>
-                        <span class="promocao-texto">SMARTPHONE SAMSUNG A16 4/128GB CZ<br>
-                        R$1279.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/smartphone-samsung-galaxy-a16-4gb-ram-128gb-verde/p?idsku=65926" target="_blank">
-                        <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263300/vitrine/263300.jpg" alt="SMARTPHONE SAMSUNG A16 4/128GB VD"><br>
-                        <span class="promocao-texto">SMARTPHONE SAMSUNG A16 4/128GB VD<br>
-                        R$1279.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
-            </a>
-            <div class="promocao-texto"><strong>FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR</strong> - R$139.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Este fone de ouvido sem fio da Philips complementa a compra de smartphones e atende à necessidade do cliente por tecnologia de áudio de qualidade, além de ser prático para o uso diário.</div>
+            <div class="produto">
+                <strong class="promocao-texto">FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR - R$139.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-philips-sem-fio-tws-bluetooth-in-ear-branco-tat1108bk-00/p?idsku=18983" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239745/vitrine/239745.jpg" alt="FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FONE OUVIDO PHILIPS TWS TAT1108WT/00 BR: Fone de ouvido sem fio que complementa a experiência de uso dos smartphones, com boa qualidade de áudio, ideal para o estilo de vida do cliente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="promocao-texto">SMARTPHONE SAMSUNG A16 4/128GB PT - R$1279.00</strong>
+                <a href="https://www.bemol.com.br/smartphone-samsung-galaxy-a16-4gb-ram-128gb-preto/p?idsku=65928" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263302/vitrine/263302.jpg" alt="SMARTPHONE SAMSUNG A16 4/128GB PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SMARTPHONE SAMSUNG A16 4/128GB PT: Produto da marca Samsung, que o cliente já comprou, e que se encaixa na faixa de preço e no interesse por tecnologia.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartphone-samsung-galaxy-a16-4gb-ram-128gb-cinza/p?idsku=65927" target="_blank">
+                            <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263301/vitrine/263301.jpg" alt="SMARTPHONE SAMSUNG A16 4/128GB CZ"><br>
+                            <span class="promocao-texto">SMARTPHONE SAMSUNG A16 4/128GB CZ<br>
+                            R$1279.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartphone-samsung-galaxy-a16-4gb-ram-128gb-verde/p?idsku=65926" target="_blank">
+                            <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263300/vitrine/263300.jpg" alt="SMARTPHONE SAMSUNG A16 4/128GB VD"><br>
+                            <span class="promocao-texto">SMARTPHONE SAMSUNG A16 4/128GB VD<br>
+                            R$1279.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="promocao-texto">SMARTPHONE MOTOROLA G15 4/256 VD - R$1159.00</strong>
+                <a href="https://www.bemol.com.br/smartphone-motorola-g15-256gb-verde-vegan-leather-tela-6-7--camera-50mp-4---8gb-ram-booster/p?idsku=74262" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/7/267149/vitrine/267149.jpg" alt="SMARTPHONE MOTOROLA G15 4/256 VD"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SMARTPHONE MOTOROLA G15 4/256 VD: Outro smartphone da marca Motorola, que o cliente já comprou, oferecendo uma opção de alta capacidade de armazenamento e bom desempenho.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartphone-motorola-g15-256gb-grafite-tela-6-7--camera-50mp-4-8gb-ram-booster/p?idsku=74376" target="_blank">
+                            <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/7/267148/vitrine/267148.jpg" alt="SMARTPHONE MOTOROLA G15 4/256 GF"><br>
+                            <span class="promocao-texto">SMARTPHONE MOTOROLA G15 4/256 GF<br>
+                            R$1199.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">SECADOR TAIFF BLACK ÍON 2000W PT - R$412.00</strong>
+                <a href="https://www.bemol.com.br/secador-taiff-black-ion-2000w-127v-preto/p?idsku=2342" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204803/vitrine/204803.jpg" alt="SECADOR TAIFF BLACK ÍON 2000W PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SECADOR TAIFF BLACK ÍON 2000W PT: Produto da marca Taiff, que o cliente já comprou anteriormente, e que se encaixa na faixa de preço e estilo de cuidados pessoais que ele valoriza.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">GRAMPEADOR TRIS HOLIC DREAMY 612508 - R$29.00</strong>
+                <a href="https://www.bemol.com.br/grampeador-tris-holic-dreamy-branco-612508/p?idsku=4379" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/8/218641/vitrine/218641.jpg" alt="GRAMPEADOR TRIS HOLIC DREAMY 612508"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: GRAMPEADOR TRIS HOLIC DREAMY 612508: Um item de utilidade que pode ser útil para o cliente em atividades escolares ou de escritório, mantendo a praticidade e funcionalidade que ele valoriza.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">BOLSA FEM YTL PT (BI) - R$279.00</strong>
+                <a href="https://www.bemol.com.br/bolsa-feminina-ytl-preto-bi/p?idsku=46817" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248209/vitrine/248209.jpg" alt="BOLSA FEM YTL PT (BI)"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: BOLSA FEM YTL PT (BI): Produto que pode ser útil para o cliente em atividades de lazer, mantendo a preferência por cores neutras e design moderno.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">KIT CARREGADOR ELG USB-A/C 1M BR - R$56.00</strong>
+                <a href="https://www.bemol.com.br/kit-carregador-parede-tipo-c-de-recarga-sincronizacao-branco-elg/p?idsku=16059" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/6/226503/vitrine/226503.jpg" alt="KIT CARREGADOR ELG USB-A/C 1M BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: KIT CARREGADOR ELG USB-A/C 1M BR: Acessório útil para os smartphones que o cliente já possui, garantindo praticidade e eficiência no carregamento.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">ASPIRADOR ELECTROLUX VERT PW SPEED STK14 - R$334.00</strong>
+                <a href="https://www.bemol.com.br/aspirador-de-po-vertical-electrolux-2-em-1-1450w-127v-azul-stk14/p?idsku=16136" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/6/226756/vitrine/226756.jpg" alt="ASPIRADOR ELECTROLUX VERT PW SPEED STK14"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: ASPIRADOR ELECTROLUX VERT PW SPEED STK14: Aspirador da marca Electrolux, que o cliente já demonstrou interesse em produtos de utilidade doméstica, oferecendo praticidade e eficiência na limpeza.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">GUARDA-CHUVA LATCOR HLB103 PT - R$32.00</strong>
+                <a href="https://www.bemol.com.br/guarda-chuva-latcor-hlb103-preto/p?idsku=43570" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204800/vitrine/204800.jpg" alt="GUARDA-CHUVA LATCOR HLB103 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: GUARDA-CHUVA LATCOR HLB103 PT: Guarda-chuva da marca Latcor, que o cliente já adquiriu, mantendo a preferência por produtos de qualidade e praticidade para lazer e esporte.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">FONE DE OUVIDO MOTOROLA BUDS 85 PT - R$299.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-motorola-bluetooth-moto-buds-085-preto/p?idsku=18193" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/4/234065/vitrine/234065.jpg" alt="FONE DE OUVIDO MOTOROLA BUDS 85 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FONE DE OUVIDO MOTOROLA BUDS 85 PT: Fone de ouvido da marca Motorola, que complementa a experiência de uso dos smartphones, mantendo a preferência por produtos de qualidade.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fone-de-ouvido-motorola-bluetooth-moto-buds-105-preto/p?idsku=18194" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/4/234066/vitrine/234066.jpg" alt="FONE DE OUVIDO MOTOROLA BUDS 105 PT"><br>
+                            <span class="">FONE DE OUVIDO MOTOROLA BUDS 105 PT<br>
+                            R$249.00</span>
+                        </a>
+                    </div>
+                    </div></div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">TV 55 SAMSUNG SMART UHD 4K 55DU7700 - R$2769.00</strong>
+                <a href="https://www.bemol.com.br/smart-tv-55-samsung-uhd-4k-gaming-hub-controle-solarcell-alexa-built-in-preto-55du7700/p?idsku=31631" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/0/240889/vitrine/240889.jpg" alt="TV 55 SAMSUNG SMART UHD 4K 55DU7700"></div>
+                </a>
+            <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smart-tv-55-samsung-crystal-uhd-4k-gaming-hub-design-airslim-alexa-built-in-preto-55du8000/p?idsku=19215" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/0/240884/vitrine/240884.jpg" alt="TV 55 SAMSUNG SMART UHD 4K 55DU8000"><br>
+                            <span class="">TV 55 SAMSUNG SMART UHD 4K 55DU8000<br>
+                            R$2899.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smart-tv-65-samsung-uhd-crystal-4k-gaming-hub-controle-solarcell-alexa-built-in-preto-65du7700/p?idsku=19220" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/0/240890/vitrine/240890.jpg" alt="TV 65 SAMSUNG SMART UHD 4K 65DU7700"><br>
+                            <span class="">TV 65 SAMSUNG SMART UHD 4K 65DU7700<br>
+                            R$3479.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smart-tv-75-samsung-uhd-4k-gaming-hub-controle-solarcell-alexa-built-in-75du7700/p?idsku=10157" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/0/240270/vitrine/240270.jpg" alt="TV 75 SAMSUNG SMART UHD 4K 75DU7700"><br>
+                            <span class="">TV 75 SAMSUNG SMART UHD 4K 75DU7700<br>
+                            R$5529.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto off-target">
+                <strong class="">CONTROLE SONY PS4 S/F JET BLACK* - R$349.00</strong>
+                <a href="https://www.bemol.com.br/controle-sem-fio-sony-ps4-jet-black/p?idsku=73491" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/9/269344/vitrine/269344.jpg" alt="CONTROLE SONY PS4 S/F JET BLACK*"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/secador-taiff-black-ion-2000w-127v-preto/p?idsku=2342" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204803/vitrine/204803.jpg" alt="SECADOR TAIFF BLACK ÍON 2000W PT"></div>
-            </a>
-            <div class=""><strong>SECADOR TAIFF BLACK ÍON 2000W PT</strong> - R$412.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SECADOR TAIFF BLACK ÍON 2000W PT: O secador Taiff é uma marca preferida do cliente e se encaixa na faixa de preço que ele costuma investir em produtos de beleza. Além disso, a cor preta é uma escolha que combina com seu estilo.</div>
+            <div class="produto off-target">
+                <strong class="">RAÇÃO PEDIGREE JUNIOR/FILHOTE 20KG (MP) - R$239.00</strong>
+                <a href="https://www.bemol.com.br/racao-pedigree-caes-junior-filhote-20kg-mp/p?idsku=28870" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/5/205990/vitrine/205990.jpg" alt="RAÇÃO PEDIGREE JUNIOR/FILHOTE 20KG (MP)"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/guarda-chuva-latcor-hlb103-preto/p?idsku=43570" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204800/vitrine/204800.jpg" alt="GUARDA-CHUVA LATCOR HLB103 PT"></div>
-            </a>
-            <div class=""><strong>GUARDA-CHUVA LATCOR HLB103 PT</strong> - R$32.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: GUARDA-CHUVA LATCOR HLB103 PT: O guarda-chuva da marca Latcor é ideal para o cliente que demonstra interesse em produtos para atividades ao ar livre. A cor preta e o design prático se alinham com suas preferências.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/kit-carregador-parede-tipo-c-de-recarga-sincronizacao-branco-elg/p?idsku=16059" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/6/226503/vitrine/226503.jpg" alt="KIT CARREGADOR ELG USB-A/C 1M BR"></div>
-            </a>
-            <div class=""><strong>KIT CARREGADOR ELG USB-A/C 1M BR</strong> - R$56.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: KIT CARREGADOR ELG USB-A/C 1M BR: O carregador é um acessório essencial para smartphones, e a marca ELG é conhecida por sua qualidade. O preço é acessível e se encaixa no padrão de consumo do cliente.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/aspirador-de-po-vertical-electrolux-2-em-1-1450w-127v-azul-stk14/p?idsku=16136" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/6/226756/vitrine/226756.jpg" alt="ASPIRADOR ELECTROLUX VERT PW SPEED STK14"></div>
-            </a>
-            <div class=""><strong>ASPIRADOR ELECTROLUX VERT PW SPEED STK14</strong> - R$334.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: ASPIRADOR ELECTROLUX VERT PW SPEED STK14: O aspirador da Electrolux é um produto de utilidade doméstica que combina praticidade e eficiência, características valorizadas pelo cliente. O design moderno e a funcionalidade são atrativos.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/cadeira-gamer-dazz-x-rocker-preto/p?idsku=42249" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224282/vitrine/224282.jpg" alt="CADEIRA GAMER DAZZ X-ROCKER PT"></div>
-            </a>
-            <div class=""><strong>CADEIRA GAMER DAZZ X-ROCKER PT</strong> - R$836.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CADEIRA GAMER DAZZ X-ROCKER PT: A cadeira gamer Dazz é ideal para o cliente que investe em produtos para jogos. O design ergonômico e a cor preta se alinham com suas preferências de conforto e estilo.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/-mouse-gamer-dazz-aries-12000dpi-usb2-0-preto/p?idsku=42245" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/8/228258/vitrine/228258.jpg" alt="MOUSE GAMER DAZZ ARIES USB PT"></div>
-            </a>
-            <div class=""><strong>MOUSE GAMER DAZZ ARIES USB PT</strong> - R$144.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MOUSE GAMER DAZZ ARIES USB PT: Este mouse gamer complementa a cadeira gamer e atende à necessidade do cliente por equipamentos de qualidade para jogos, com um design moderno e funcional.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/garrafa-termica-stanley-flip-straw-651ml-charcoal-8082/p?idsku=6780" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/7/227782/vitrine/227782.jpg" alt="GARRAFA TÉRM STANLEY FLIP ST 651ML 8082"></div>
-            </a>
-            <div class=""><strong>GARRAFA TÉRM STANLEY FLIP ST 651ML 8082</strong> - R$312.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: GARRAFA TÉRM STANLEY FLIP ST 651ML 8082: A garrafa térmica da Stanley é um produto prático para o dia a dia, ideal para quem gosta de atividades ao ar livre, como o cliente. A cor carvão é sóbria e elegante.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/copo-termico-stanley-flip-straw-887ml-polar-8085/p?idsku=30873" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/7/227787/vitrine/227787.jpg" alt="GARRAFA TÉRM STANLEY FLIP ST 887ML 8085"><br>
-                        <span class="">GARRAFA TÉRM STANLEY FLIP ST 887ML 8085<br>
-                        R$274.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/garrafa-termica-stanley-flip-straw-651ml-polar-8081/p?idsku=6809" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/7/227835/vitrine/227835.jpg" alt="GARRAFA TÉRM STANLEY FLIP 650ML 8081 BR"><br>
-                        <span class="">GARRAFA TÉRM STANLEY FLIP 650ML 8081 BR<br>
-                        R$324.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fritadeira-philips-walita-air-fryer-6-2-litros-essential-xl-digital-preta-ri9270-90/p?idsku=9172" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/6/236925/vitrine/236925.jpg" alt="FRITAD WALITA AFRYER 6,2L RI9270/90 PT"></div>
-            </a>
-            <div class=""><strong>FRITAD WALITA AFRYER 6,2L RI9270/90 PT</strong> - R$876.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FRITAD WALITA AFRYER 6,2L RI9270/90 PT: A fritadeira Air Fryer da Philips é uma opção saudável e prática para o cliente que valoriza utilidades domésticas. O preço está dentro da faixa que ele costuma pagar por eletroportáteis.</div>
+            <div class="produto off-target">
+                <strong class="">MOTOR ESTACION TOYAMA 8HP GASOL TE80JETX - R$1169.00</strong>
+                <a href="https://www.bemol.com.br/motor-toyama-a-gasolina-com-partida-manual-8hp-212cc-te80jet-hs-xp/p?idsku=4341" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/8/218498/vitrine/218498.jpg" alt="MOTOR ESTACION TOYAMA 8HP GASOL TE80JETX"></div>
+                </a>
             </div>
         <p></p>
     </body>

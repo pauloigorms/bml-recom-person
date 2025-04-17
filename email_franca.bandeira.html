@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,133 +73,145 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
-        <h2>Olá, Francivaldo</h2>
+        <h2>Olá, França</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/impressora-multifuncional-epson-ecotank-usb-wireless-l3250/p?idsku=29733" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/5/215524/vitrine/215524.jpg" alt="MULTIFUNCIONAL EPSON ECOTANK L3250 PT"></div>
-            </a>
-            <div class="promocao-texto"><strong>MULTIFUNCIONAL EPSON ECOTANK L3250 PT</strong> - R$1479.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MULTIFUNCIONAL EPSON ECOTANK L3250 PT: Produto ideal para o cliente que já demonstrou interesse em tecnologia e produtividade. A multifuncional oferece eficiência e economia, alinhando-se ao padrão de compras do cliente.</div>
+            <div class="produto">
+                <strong class="promocao-texto">VAPORIZADOR WALITA PORTÁTIL STH3020 BR - R$379.00</strong>
+                <a href="https://www.bemol.com.br/vaporizador-philips-walita-portatil-branco-sth3020-12/p?idsku=27384" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/6/236928/vitrine/236928.jpg" alt="VAPORIZADOR WALITA PORTÁTIL STH3020 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: VAPORIZADOR WALITA PORTÁTIL STH3020 BR: O vaporizador Philips Walita é um produto prático e eficiente para manter as roupas impecáveis, refletindo a busca do cliente por utilidades domésticas que facilitam o dia a dia.</div>
+                    </div>
+            <div class="produto">
+                <strong class="promocao-texto">TABLET SAMSUNG S6 LITE 4/64GB CZ - R$2579.00</strong>
+                <a href="https://www.bemol.com.br/tablet-samsung-galaxy-tab-s6-lite-64gb-cinza-tela-10-4-camera-8mp-4gb-ram/p?idsku=31477" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/images/catalog/farma/no_image.jpg" alt="TABLET SAMSUNG S6 LITE 4/64GB CZ"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: TABLET SAMSUNG S6 LITE 4/64GB CZ: O tablet Samsung Galaxy S6 Lite é uma excelente opção para o cliente que investe em tecnologia, oferecendo versatilidade e desempenho para diversas atividades, desde trabalho até lazer.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/tablet-samsung-galaxy-tab-s6-lite-4g-64gb-cinza-tela-10-4-camera-8mp-4gb-ram/p?idsku=10160" target="_blank">
+                            <img class="promocao-img" src="https://static.bemol.com.br/images/catalog/farma/no_image.jpg" alt="TABLET SAMSUNG S6 LITE 4G 4/64GB CZ"><br>
+                            <span class="promocao-texto">TABLET SAMSUNG S6 LITE 4G 4/64GB CZ<br>
+                            R$2679.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="promocao-texto">MULTIFUNCIONAL EPSON ECOTANK L3250 PT - R$1479.00</strong>
+                <a href="https://www.bemol.com.br/impressora-multifuncional-epson-ecotank-usb-wireless-l3250/p?idsku=29733" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/5/215524/vitrine/215524.jpg" alt="MULTIFUNCIONAL EPSON ECOTANK L3250 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: MULTIFUNCIONAL EPSON ECOTANK L3250 PT: A impressora multifuncional Epson EcoTank é ideal para o cliente que investe em tecnologia e busca eficiência, com baixo custo de impressão e conectividade avançada, alinhando-se ao seu interesse em produtos de informática.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">ASPIRADOR ELECTROLUX ACQUA PW AQP20PT/AM - R$454.00</strong>
+                <a href="https://www.bemol.com.br/aspirador-de-po-e-agua-electrolux-acqua-power-1-400w-127v-preto-aqp20/p?idsku=11435" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/7/197545/vitrine/197545.jpg" alt="ASPIRADOR ELECTROLUX ACQUA PW AQP20PT/AM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: ASPIRADOR ELECTROLUX ACQUA PW AQP20PT/AM: O aspirador Electrolux é ideal para a limpeza eficiente de ambientes, atendendo à necessidade do cliente por produtos de utilidade doméstica que oferecem praticidade e potência.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">CAMA BOX MARJOM IARA ESP 88X188X44 - R$582.00</strong>
+                <a href="https://www.bemol.com.br/cama-box-solteiro-marjom-iara-d28-88x188x44-marrom-1419/p?idsku=3956" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/5/215803/vitrine/215803.jpg" alt="CAMA BOX MARJOM IARA ESP 88X188X44"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CAMA BOX MARJOM IARA ESP 88X188X44: A cama box Marjom é uma escolha confortável e prática, ideal para o cliente que busca qualidade e durabilidade em móveis para o lar.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">VENT MESA 50 BAUMON 2EM1 FW10595 PT - R$249.00</strong>
+                <a href="https://www.bemol.com.br/vertilador-de-mesa-50cm-baumon-2-em-1-127v-preto-fw010595/p?idsku=51722" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/2/252881/vitrine/252881.jpg" alt="VENT MESA 50 BAUMON 2EM1 FW10595 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: VENT MESA 50 BAUMON 2EM1 FW10595 PT: O ventilador 2 em 1 Baumon é uma solução prática para os dias quentes, refletindo a busca do cliente por eletroportáteis que oferecem conforto e eficiência.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">PELÍCULA AMET NANOTECH PRIVACY NE - R$99.00</strong>
+                <a href="https://www.bemol.com.br/pelicula-amet-nanotech-privacy-new-edition-3-geracao-580/p?idsku=44672" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/0/240686/vitrine/240686.jpg" alt="PELÍCULA AMET NANOTECH PRIVACY NE"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PELÍCULA AMET NANOTECH PRIVACY NE: A película de privacidade Amet é um acessório que complementa a proteção de dispositivos eletrônicos, alinhando-se ao interesse do cliente por tecnologia e segurança.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">CAFETEIRA B+D CM200I PT/IN - R$322.00</strong>
+                <a href="https://www.bemol.com.br/cafeteira-eletrica-black-decker-ate-25-xicaras-750w-127v-preto-e-inox-cm200l/p?idsku=1939" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/8/198358/vitrine/198358.jpg" alt="CAFETEIRA B+D CM200I PT/IN"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CAFETEIRA B+D CM200I PT/IN: A cafeteira Black+Decker é prática e atende à necessidade do cliente por eletrodomésticos de qualidade, permitindo preparar grandes quantidades de café, ideal para a rotina familiar.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">LIVRO ROCCO AS 48 LEIS DO PODER (MP) - R$36.00</strong>
+                <a href="https://www.bemol.com.br/livro-as-48-leis-do-poder-rocco-mp/p?idsku=26869" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/5/235017/vitrine/235017.jpg" alt="LIVRO ROCCO AS 48 LEIS DO PODER (MP)"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIVRO ROCCO AS 48 LEIS DO PODER (MP): O livro 'As 48 Leis do Poder' se alinha ao interesse do cliente por desenvolvimento pessoal e estratégias de sucesso, complementando suas compras anteriores de literatura.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">POTE MIMO HERMÉTICO 1L 6670 - R$44.00</strong>
+                <a href="https://www.bemol.com.br/pote-hermetico-mimo-style-1l-com-tampa-inox-transparente-6670/p?idsku=16763" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/8/228810/vitrine/228810.jpg" alt="POTE MIMO HERMÉTICO 1L 6670"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: POTE MIMO HERMÉTICO 1L 6670: O pote hermético Mimo é uma excelente opção para organização na cozinha, alinhando-se ao interesse do cliente por produtos de utilidade doméstica e sua preferência por itens de qualidade.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/pote-hermetico-mimo-style-750ml-com-tampa-inox-transparente-6672/p?idsku=30920" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/8/228811/vitrine/228811.jpg" alt="POTE MIMO HERMÉTICO 750ML 6672"><br>
+                            <span class="">POTE MIMO HERMÉTICO 750ML 6672<br>
+                            R$39.00</span>
+                        </a>
+                    </div>
+                    </div></div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">CÔMODA 2P/7G DEMÓBILE LONDON BR - R$1066.00</strong>
+                <a href="https://www.bemol.com.br/comoda-2-portas-e-7-gavetas-demobile-london-branco/p?idsku=51185" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/2/242467/vitrine/242467.jpg" alt="CÔMODA 2P/7G DEMÓBILE LONDON BR"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/sanduicheira-grill-black-decker-cuisine-expert-700w-127v-preto-gs800/p?idsku=4812" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220335/vitrine/220335.jpg" alt="SANDUICHEIRA GRILL B+D GS800 PT"></div>
-            </a>
-            <div class="promocao-texto"><strong>SANDUICHEIRA GRILL B+D GS800 PT</strong> - R$156.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SANDUICHEIRA GRILL B+D GS800 PT: Produto que oferece praticidade na cozinha, alinhando-se ao interesse do cliente por eletroportáteis que facilitam o dia a dia.</div>
+            <div class="produto off-target">
+                <strong class="">LANTERNA LATCOR LP7644-1 - R$142.00</strong>
+                <a href="https://www.bemol.com.br/lanterna-portatil-latcor-preto-lp7644-1/p?idsku=2417" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/5/205585/vitrine/205585.jpg" alt="LANTERNA LATCOR LP7644-1"></div>
+                </a>
+            <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/lanterna-manual-estilo-caneta-funcionamento-a-pilha-latcor-lp6892-a-plastico/p?idsku=11014" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184994/vitrine/184994.jpg" alt="LANTERNA LATCOR LP6892-A"><br>
+                            <span class="">LANTERNA LATCOR LP6892-A<br>
+                            R$168.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto off-target">
+                <strong class="">TV 43 SAMSUNG SMART LED FHD UN43T5300AGX - R$1799.00</strong>
+                <a href="https://www.bemol.com.br/smart-tv-samsung-43-full-hd-led-wi-fi-hdr-e-hdmi-un43t5300agxzd/p?idsku=2497" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/6/206124/vitrine/206124.jpg" alt="TV 43 SAMSUNG SMART LED FHD UN43T5300AGX"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ipad-apple-9-geracao-a13-64gb-touch-id-prata-tela-10-2-camera-13mp/p?idsku=9787" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239267/vitrine/239267.jpg" alt="APPLE IPAD 9GER 10.2 64GB PR(BI)"></div>
-            </a>
-            <div class=""><strong>APPLE IPAD 9GER 10.2 64GB PR(BI)</strong> - R$2199.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: APPLE IPAD 9GER 10.2 64GB PR(BI): O iPad é um produto de tecnologia de prestígio, que se encaixa no perfil do cliente que valoriza eficiência e design moderno. Ideal para uso em casa e trabalho.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/ipad-9°-geracao-a13-bionic-64gb-camera-12mp-tela-10-2--cinza-espacial--bi-/p?idsku=43560" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/4/244725/vitrine/244725.jpg" alt="APPLE IPAD 9GER 10.2 64GB CZ (BI)"><br>
-                        <span class="">APPLE IPAD 9GER 10.2 64GB CZ (BI)<br>
-                        R$2359.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/aspirador-de-po-e-agua-electrolux-acqua-power-1-400w-127v-preto-aqp20/p?idsku=11435" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/7/197545/vitrine/197545.jpg" alt="ASPIRADOR ELECTROLUX ACQUA PW AQP20PT/AM"></div>
-            </a>
-            <div class=""><strong>ASPIRADOR ELECTROLUX ACQUA PW AQP20PT/AM</strong> - R$454.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: ASPIRADOR ELECTROLUX ACQUA PW AQP20PT/AM: Aspirador de pó e água que atende à necessidade de limpeza eficiente em casa, refletindo o interesse do cliente por produtos de utilidade doméstica.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fone-de-ouvido-in-ear-jbl-t110-16-ohms-preto/p?idsku=1569" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/6/186176/vitrine/186176.jpg" alt="FONE OUVIDO JBL IN-EAR T110 PT"></div>
-            </a>
-            <div class=""><strong>FONE OUVIDO JBL IN-EAR T110 PT</strong> - R$79.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FONE OUVIDO JBL IN-EAR T110 PT: Produto de áudio que complementa a experiência de uso de dispositivos eletrônicos, alinhando-se ao interesse do cliente por tecnologia e entretenimento.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-t110-branco/p?idsku=11355" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/5/195321/vitrine/195321.jpg" alt="FONE OUVIDO JBL IN-EAR T110 BR"><br>
-                        <span class="">FONE OUVIDO JBL IN-EAR T110 BR<br>
-                        R$69.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/livro-as-48-leis-do-poder-rocco-mp/p?idsku=26869" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/5/235017/vitrine/235017.jpg" alt="LIVRO ROCCO AS 48 LEIS DO PODER (MP)"></div>
-            </a>
-            <div class=""><strong>LIVRO ROCCO AS 48 LEIS DO PODER (MP)</strong> - R$36.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIVRO ROCCO AS 48 LEIS DO PODER (MP): O livro se alinha ao interesse do cliente por desenvolvimento pessoal e estratégias sociais, refletindo seu gosto por literatura que provoca reflexão.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/pote-hermetico-mimo-style-1l-com-tampa-inox-transparente-6670/p?idsku=16763" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/8/228810/vitrine/228810.jpg" alt="POTE MIMO HERMÉTICO 1L 6670"></div>
-            </a>
-            <div class=""><strong>POTE MIMO HERMÉTICO 1L 6670</strong> - R$44.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: POTE MIMO HERMÉTICO 1L 6670: Produto de utilidade doméstica que se encaixa no padrão de compras do cliente, oferecendo praticidade e funcionalidade para o armazenamento de alimentos.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/vertilador-de-mesa-50cm-baumon-2-em-1-127v-preto-fw010595/p?idsku=51722" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/2/252881/vitrine/252881.jpg" alt="VENT MESA 50 BAUMON 2EM1 FW10595 PT"></div>
-            </a>
-            <div class=""><strong>VENT MESA 50 BAUMON 2EM1 FW10595 PT</strong> - R$249.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: VENT MESA 50 BAUMON 2EM1 FW10595 PT: Ventilador que proporciona conforto em dias quentes, alinhando-se à preocupação do cliente com o conforto em casa, especialmente em produtos de linha branca.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/mala-de-viagem-media-samsonite-empire-spinner-24-rigida-cinza-10299211741/p?idsku=5731" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224592/vitrine/224592.jpg" alt="MALA SAMSONITE SPINNER M 10299211741 PT"></div>
-            </a>
-            <div class=""><strong>MALA SAMSONITE SPINNER M 10299211741 PT</strong> - R$719.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MALA SAMSONITE SPINNER M 10299211741 PT: Produto de viagem que complementa a experiência do cliente em deslocamentos, refletindo um estilo de vida prático e funcional.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/mala-de-viagem-media-samsonite-empire-spinner-24-rigida-petunia-pink-102992l2491/p?idsku=25660" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224595/vitrine/224595.jpg" alt="MALA SAMSONITE SPINNER M 102992L2491 RO"><br>
-                        <span class="">MALA SAMSONITE SPINNER M 102992L2491 RO<br>
-                        R$719.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/mala-de-viagem-media-samsonite-derby-spinner-24-rigida-vermelha-13282217261/p?idsku=15510" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224781/vitrine/224781.jpg" alt="MALA SAMSONITE DERBY M 13282217261 VM"><br>
-                        <span class="">MALA SAMSONITE DERBY M 13282217261 VM<br>
-                        R$719.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/suporte-de-parede-para-micro-ondas-fornos-eletricos-elg-branco-mw05wh/p?idsku=13405" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/6/216163/vitrine/216163.jpg" alt="SUP P/FORNO/MICRO-ONDAS ELG MW05WH BR"></div>
-            </a>
-            <div class=""><strong>SUP P/FORNO/MICRO-ONDAS ELG MW05WH BR</strong> - R$92.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SUP P/FORNO/MICRO-ONDAS ELG MW05WH BR: Suporte que ajuda a otimizar o espaço na cozinha, refletindo a busca do cliente por soluções práticas e funcionais em utilidades domésticas.</div>
+            <div class="produto off-target">
+                <strong class="">VIOLÃO ACÚS ARTILUX 6 CORDAS ATL831 (MP) - R$223.00</strong>
+                <a href="https://www.bemol.com.br/violao-acustico-artilux-6-cordas-atl831--mp-/p?idsku=65788" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/4/264454/vitrine/264454.jpg" alt="VIOLÃO ACÚS ARTILUX 6 CORDAS ATL831 (MP)"></div>
+                </a>
             </div>
         <p></p>
     </body>

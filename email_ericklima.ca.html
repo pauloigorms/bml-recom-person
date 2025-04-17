@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,125 +73,155 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Erick</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/sanduicheira-grill-black-decker-cuisine-expert-700w-127v-preto-gs800/p?idsku=4812" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220335/vitrine/220335.jpg" alt="SANDUICHEIRA GRILL B+D GS800 PT"></div>
-            </a>
-            <div class="promocao-texto"><strong>SANDUICHEIRA GRILL B+D GS800 PT</strong> - R$156.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SANDUICHEIRA GRILL B+D GS800 PT: A sanduicheira Black+Decker é um eletroportátil que complementa a experiência de cozinhar do cliente, oferecendo praticidade e eficiência, características que ele valoriza em seus produtos.</div>
+            <div class="produto">
+                <strong class="promocao-texto">MICRO-ONDAS BRASTEMP 32L BMS46ARANA PR - R$790.00</strong>
+                <a href="https://www.bemol.com.br/micro-ondas-brastemp-32-litros-127v-menu-gourmet-cinza-espelhado-bms46arana/p?idsku=5569" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/3/223773/vitrine/223773.jpg" alt="MICRO-ONDAS BRASTEMP 32L BMS46ARANA PR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: MICRO-ONDAS BRASTEMP 32L BMS46ARANA PR: Este micro-ondas Brastemp é um eletroportátil de alta qualidade, que se encaixa no padrão de compra do cliente, oferecendo praticidade e eficiência para o dia a dia.</div>
+                    </div>
+            <div class="produto">
+                <strong class="promocao-texto">SANDUICHEIRA GRILL B+D GS800 PT - R$156.00</strong>
+                <a href="https://www.bemol.com.br/sanduicheira-grill-black-decker-cuisine-expert-700w-127v-preto-gs800/p?idsku=4812" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220335/vitrine/220335.jpg" alt="SANDUICHEIRA GRILL B+D GS800 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SANDUICHEIRA GRILL B+D GS800 PT: Este eletroportátil da Black+Decker é prático e eficiente, alinhando-se ao interesse do cliente por produtos que facilitam o dia a dia na cozinha, além de estar em uma faixa de preço acessível.</div>
+                    </div>
+            <div class="produto">
+                <strong class="promocao-texto">HEADPHONE JBL BT T520 AZ - R$289.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-azul-520bt/p?idsku=904" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230424/vitrine/230424.jpg" alt="HEADPHONE JBL BT T520 AZ"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: HEADPHONE JBL BT T520 AZ: Este fone de ouvido JBL é uma boa opção para complementar o uso de dispositivos tecnológicos, oferecendo qualidade sonora e conforto, alinhando-se ao estilo de vida do cliente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-preto-520bt/p?idsku=903" target="_blank">
+                            <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230423/vitrine/230423.jpg" alt="HEADPHONE JBL BT T520 PT"><br>
+                            <span class="promocao-texto">HEADPHONE JBL BT T520 PT<br>
+                            R$289.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">SANDUICHEIRA BAUMON FS-8009C PT - R$109.00</strong>
+                <a href="https://www.bemol.com.br/sanduicheira-baumon-127v-750w-preta-fs-8009c/p?idsku=45639" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238700/vitrine/238700.jpg" alt="SANDUICHEIRA BAUMON FS-8009C PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SANDUICHEIRA BAUMON FS-8009C PT: A sanduicheira Baumon é uma opção prática e acessível, ideal para o cliente que busca eletroportáteis que facilitam a preparação de refeições rápidas.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">ANTENA INTERNA INTELBRAS UHF/HDTV 2025 - R$29.00</strong>
+                <a href="https://www.bemol.com.br/antena-interna-intelbras-tv-digital-uhf-hdtv-ai-2025/p?idsku=25089" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220106/vitrine/220106.jpg" alt="ANTENA INTERNA INTELBRAS UHF/HDTV 2025"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: ANTENA INTERNA INTELBRAS UHF/HDTV 2025: A antena interna é um acessório útil para quem possui uma TV, garantindo melhor qualidade de sinal e imagem, complementando a experiência de entretenimento do cliente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">SMARTPHONE SAMSUNG A06 4/128GB VDC - R$899.00</strong>
+                <a href="https://www.bemol.com.br/smartphone-samsung-a06-4gb-ram-128gb-verde-claro/p?idsku=55868" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/4/254784/vitrine/254784.jpg" alt="SMARTPHONE SAMSUNG A06 4/128GB VDC"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SMARTPHONE SAMSUNG A06 4/128GB VDC: O smartphone Samsung A06 é uma escolha que complementa o interesse do cliente por tecnologia, oferecendo um bom desempenho e armazenamento, além de ser da marca preferida.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartphone-samsung-a06-4gb-ram-128gb-azul/p?idsku=55867" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/4/254430/vitrine/254430.jpg" alt="SMARTPHONE SAMSUNG A06 4/128GB AZE"><br>
+                            <span class="">SMARTPHONE SAMSUNG A06 4/128GB AZE<br>
+                            R$899.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">MONITOR SAMSUNG 24" LED FHD T350 PT - R$619.00</strong>
+                <a href="https://www.bemol.com.br/monitor-samsung-24-led-full-hd-preto-t350/p?idsku=9350" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238172/vitrine/238172.jpg" alt="MONITOR SAMSUNG 24" LED FHD T350 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: MONITOR SAMSUNG 24" LED FHD T350 PT: O monitor Samsung é uma excelente adição ao perfil do cliente, que já possui produtos da marca. Ele oferece qualidade de imagem e é ideal para quem busca tecnologia e eficiência.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">JG 5P JARRA/COPO UZ UZ216 VM - R$44.00</strong>
+                <a href="https://www.bemol.com.br/conjunto-jarra-4-copos-uz-uz216-vermelho/p?idsku=11026" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/5/185308/vitrine/185308.jpg" alt="JG 5P JARRA/COPO UZ UZ216 VM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: JG 5P JARRA/COPO UZ UZ216 VM: Este conjunto de jarra e copos é prático e funcional, ideal para o uso diário, e está dentro da faixa de preço que o cliente costuma pagar por utensílios de cozinha.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">FRIGIDEIRA TRAMONTINA TURIM 20255824 VM - R$59.00</strong>
+                <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20255824/p?idsku=4629" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219548/vitrine/219548.jpg" alt="FRIGIDEIRA TRAMONTINA TURIM 20255824 VM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FRIGIDEIRA TRAMONTINA TURIM 20255824 VM: A frigideira Tramontina é uma escolha ideal, pois combina a marca preferida do cliente com um design moderno e funcional, além de estar dentro da faixa de preço habitual para utensílios de cozinha.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/frigideira-com-tampa-tramontina-turim-vermelha-20267822/p?idsku=4632" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219564/vitrine/219564.jpg" alt="FRIGIDEIRA TRAMONTINA TURIM 20267822 VM"><br>
+                            <span class="">FRIGIDEIRA TRAMONTINA TURIM 20267822 VM<br>
+                            R$96.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20260728/p?idsku=756" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/6/226033/vitrine/226033.jpg" alt="FRIGIDEIRA TRAMONTINA TURIM 20260728 VM"><br>
+                            <span class="">FRIGIDEIRA TRAMONTINA TURIM 20260728 VM<br>
+                            R$59.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/panquequeira-tramontina-turim-vermelho-20264822/p?idsku=4631" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219563/vitrine/219563.jpg" alt="PANQUEQUEIRA TRAMONTINA TURIM 20264822"><br>
+                            <span class="">PANQUEQUEIRA TRAMONTINA TURIM 20264822<br>
+                            R$52.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">BALANÇA DIG MONDIAL BL-05 BIV PT - R$159.00</strong>
+                <a href="https://www.bemol.com.br/balanca-digital-mondial-smart-black/p?idsku=49375" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/3/213325/vitrine/213325.jpg" alt="BALANÇA DIG MONDIAL BL-05 BIV PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: BALANÇA DIG MONDIAL BL-05 BIV PT: A balança digital Mondial é um produto que combina qualidade e praticidade, ideal para o cliente que valoriza utensílios que facilitam a rotina na cozinha.</div>
+                    </div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">RAÇÃO PEDIGREE JUNIOR/FILHOTE 20KG (MP) - R$239.00</strong>
+                <a href="https://www.bemol.com.br/racao-pedigree-caes-junior-filhote-20kg-mp/p?idsku=28870" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/5/205990/vitrine/205990.jpg" alt="RAÇÃO PEDIGREE JUNIOR/FILHOTE 20KG (MP)"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/micro-ondas-brastemp-32-litros-127v-menu-gourmet-cinza-espelhado-bms46arana/p?idsku=5569" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/3/223773/vitrine/223773.jpg" alt="MICRO-ONDAS BRASTEMP 32L BMS46ARANA PR"></div>
-            </a>
-            <div class="promocao-texto"><strong>MICRO-ONDAS BRASTEMP 32L BMS46ARANA PR</strong> - R$790.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MICRO-ONDAS BRASTEMP 32L BMS46ARANA PR: Este micro-ondas Brastemp é uma excelente adição à cozinha do cliente, pois combina eficiência e um design moderno, além de estar dentro da faixa de preço que ele costuma pagar por eletroportáteis.</div>
+            <div class="produto off-target">
+                <strong class="">CADEIRA GAMER DAZZ X-ROCKER PT - R$836.00</strong>
+                <a href="https://www.bemol.com.br/cadeira-gamer-dazz-x-rocker-preto/p?idsku=42249" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224282/vitrine/224282.jpg" alt="CADEIRA GAMER DAZZ X-ROCKER PT"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/panela-de-pressao-brinox-4-2l-verde-4952-109/p?idsku=62569" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/5/255273/vitrine/255273.jpg" alt="PANELA PRESS BRINOX 4,2L 4952/109 GN"></div>
-            </a>
-            <div class="promocao-texto"><strong>PANELA PRESS BRINOX 4,2L 4952/109 GN</strong> - R$339.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PANELA PRESS BRINOX 4,2L 4952/109 GN: A panela de pressão Brinox é um utensílio de cozinha que se encaixa perfeitamente no perfil do cliente, que busca praticidade e eficiência na preparação de refeições.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20255824/p?idsku=4629" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219548/vitrine/219548.jpg" alt="FRIGIDEIRA TRAMONTINA TURIM 20255824 VM"></div>
-            </a>
-            <div class=""><strong>FRIGIDEIRA TRAMONTINA TURIM 20255824 VM</strong> - R$59.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FRIGIDEIRA TRAMONTINA TURIM 20255824 VM: A frigideira Tramontina é uma escolha ideal para o cliente, pois combina a marca preferida com a cor vermelha, que é uma das suas favoritas. Além disso, é um utensílio prático e eficiente para o dia a dia na cozinha.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/panquequeira-tramontina-turim-vermelho-20264822/p?idsku=4631" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219563/vitrine/219563.jpg" alt="PANQUEQUEIRA TRAMONTINA TURIM 20264822"><br>
-                        <span class="">PANQUEQUEIRA TRAMONTINA TURIM 20264822<br>
-                        R$52.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/frigideira-tramontina-turim-vermelho-20260728/p?idsku=756" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/6/226033/vitrine/226033.jpg" alt="FRIGIDEIRA TRAMONTINA TURIM 20260728 VM"><br>
-                        <span class="">FRIGIDEIRA TRAMONTINA TURIM 20260728 VM<br>
-                        R$59.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/frigideira-com-tampa-tramontina-turim-vermelha-20267822/p?idsku=4632" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219564/vitrine/219564.jpg" alt="FRIGIDEIRA TRAMONTINA TURIM 20267822 VM"><br>
-                        <span class="">FRIGIDEIRA TRAMONTINA TURIM 20267822 VM<br>
-                        R$96.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/conjunto-jarra-4-copos-uz-uz216-vermelho/p?idsku=11026" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/5/185308/vitrine/185308.jpg" alt="JG 5P JARRA/COPO UZ UZ216 VM"></div>
-            </a>
-            <div class=""><strong>JG 5P JARRA/COPO UZ UZ216 VM</strong> - R$44.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: JG 5P JARRA/COPO UZ UZ216 VM: Este conjunto de jarra e copos na cor vermelha é perfeito para o cliente, que valoriza produtos de utilidade doméstica. A praticidade e o design moderno se alinham com suas preferências.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/balanca-digital-mondial-smart-black/p?idsku=49375" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/3/213325/vitrine/213325.jpg" alt="BALANÇA DIG MONDIAL BL-05 BIV PT"></div>
-            </a>
-            <div class=""><strong>BALANÇA DIG MONDIAL BL-05 BIV PT</strong> - R$159.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: BALANÇA DIG MONDIAL BL-05 BIV PT: A balança digital Mondial é um produto útil para a cozinha, ajudando o cliente a medir ingredientes com precisão, o que é essencial para quem valoriza a eficiência na cozinha.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/suporte-de-parede-para-micro-ondas-fornos-eletricos-elg-branco-mw05wh/p?idsku=13405" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/6/216163/vitrine/216163.jpg" alt="SUP P/FORNO/MICRO-ONDAS ELG MW05WH BR"></div>
-            </a>
-            <div class=""><strong>SUP P/FORNO/MICRO-ONDAS ELG MW05WH BR</strong> - R$92.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SUP P/FORNO/MICRO-ONDAS ELG MW05WH BR: Este suporte para micro-ondas é uma solução prática para otimizar o espaço na cozinha, alinhando-se ao interesse do cliente em produtos que facilitam a organização e a funcionalidade do ambiente.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/antena-interna-intelbras-tv-digital-uhf-hdtv-ai-2025/p?idsku=25089" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220106/vitrine/220106.jpg" alt="ANTENA INTERNA INTELBRAS UHF/HDTV 2025"></div>
-            </a>
-            <div class=""><strong>ANTENA INTERNA INTELBRAS UHF/HDTV 2025</strong> - R$29.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: ANTENA INTERNA INTELBRAS UHF/HDTV 2025: A antena interna é um complemento ideal para a TV que o cliente já possui, garantindo uma melhor recepção de sinal e qualidade de imagem, o que é importante para a experiência de entretenimento em casa.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/refil-para-purificador-de-agua-ibbl-c-3-natural-lacrado-24010051/p?idsku=7311" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/9/229491/vitrine/229491.jpg" alt="REFIL IBBL C+3 DE AGUA NATURAL 24010051"></div>
-            </a>
-            <div class=""><strong>REFIL IBBL C+3 DE AGUA NATURAL 24010051</strong> - R$79.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: REFIL IBBL C+3 DE AGUA NATURAL 24010051: O refil para purificador de água IBBL é um produto que melhora a qualidade da água consumida, alinhando-se ao interesse do cliente em produtos que promovem saúde e bem-estar.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/monitor-samsung-24-led-full-hd-preto-t350/p?idsku=9350" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238172/vitrine/238172.jpg" alt="MONITOR SAMSUNG 24" LED FHD T350 PT"></div>
-            </a>
-            <div class=""><strong>MONITOR SAMSUNG 24" LED FHD T350 PT</strong> - R$619.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MONITOR SAMSUNG 24" LED FHD T350 PT: O monitor Samsung é uma adição prática para o ambiente de trabalho ou entretenimento do cliente, oferecendo qualidade de imagem e um design moderno, características que ele valoriza.</div>
+            <div class="produto off-target">
+                <strong class="">CONSOLE SONY PS5 SLIM DISC BUNDLE 1TB(RC - R$3999.00</strong>
+                <a href="https://www.bemol.com.br/console-playstation-5-slim-returnal-e-ratchet-clank-1tb/p?idsku=18986" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239748/vitrine/239748.jpg" alt="CONSOLE SONY PS5 SLIM DISC BUNDLE 1TB(RC"></div>
+                </a>
             </div>
         <p></p>
     </body>

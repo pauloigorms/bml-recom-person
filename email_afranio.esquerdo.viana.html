@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,166 +73,186 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Afranio</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/fritadeira-multilaser-air-fryer-4-litros-preto-go205/p?idsku=31858" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/2/242516/vitrine/242516.jpg" alt="FRITAD MULTILASER AFRYER 4L GO205 PT"></div>
-            </a>
-            <div class="promocao-texto"><strong>FRITAD MULTILASER AFRYER 4L GO205 PT</strong> - R$379.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FRITAD MULTILASER AFRYER 4L GO205 PT: A fritadeira Air Fryer é uma opção saudável e prática, complementando o interesse do cliente por eletroportáteis que facilitam o preparo de alimentos.</div>
+            <div class="produto">
+                <strong class="promocao-texto">SANDUICHEIRA GRILL B+D GS800 PT - R$156.00</strong>
+                <a href="https://www.bemol.com.br/sanduicheira-grill-black-decker-cuisine-expert-700w-127v-preto-gs800/p?idsku=4812" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220335/vitrine/220335.jpg" alt="SANDUICHEIRA GRILL B+D GS800 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SANDUICHEIRA GRILL B+D GS800 PT: Outra opção de sanduicheira da Black+Decker, que oferece versatilidade e eficiência, ideal para o cliente que já demonstrou interesse por produtos dessa marca.</div>
+                    </div>
+            <div class="produto">
+                <strong class="promocao-texto">FRITAD MULTILASER AFRYER 4L GO205 PT - R$379.00</strong>
+                <a href="https://www.bemol.com.br/fritadeira-multilaser-air-fryer-4-litros-preto-go205/p?idsku=31858" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/2/242516/vitrine/242516.jpg" alt="FRITAD MULTILASER AFRYER 4L GO205 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FRITAD MULTILASER AFRYER 4L GO205 PT: Fritadeira Air Fryer que se alinha ao interesse do cliente por eletroportáteis que promovem uma alimentação mais saudável, com design moderno e funcional.</div>
+                    </div>
+            <div class="produto">
+                <strong class="promocao-texto">TV 40 AOC SMART FHD ROKU 40S5045/78G - R$1509.00</strong>
+                <a href="https://www.bemol.com.br/tv-40-polegadas-aoc-smart-fhd-roku-|-bemol/p?idsku=54046" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/4/254786/vitrine/254786.jpg" alt="TV 40 AOC SMART FHD ROKU 40S5045/78G"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: TV 40 AOC SMART FHD ROKU 40S5045/78G: Uma Smart TV que oferece entretenimento de qualidade, ideal para o cliente que valoriza tecnologia e design moderno em sua casa.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">LIQUID WALITA DAILY RI2110/91 550W PT - R$149.00</strong>
+                <a href="https://www.bemol.com.br/liquidificador-walita-daily-550w-2v-pulsar-jarra-2-litros-preto/p?idsku=355" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/8/198423/vitrine/198423.jpg" alt="LIQUID WALITA DAILY RI2110/91 550W PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIQUID WALITA DAILY RI2110/91 550W PT: Liquidificador da marca Walita, que oferece potência e praticidade, ideal para o cliente que valoriza eficiência na cozinha e já possui outros eletroportáteis.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/liquidificador-walita-daily-550w-2v-pulsar-jarra-2-litros-vermelho/p?idsku=356" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/8/198424/vitrine/198424.jpg" alt="LIQUID WALITA DAILY RI2110/41 550W VM"><br>
+                            <span class="">LIQUID WALITA DAILY RI2110/41 550W VM<br>
+                            R$149.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">EXTENSÃO INTELBRAS 3T/2P 10M 4830152 BR - R$56.00</strong>
+                <a href="https://www.bemol.com.br/extensao-intelbras-3-tomadas-2-pinos-10a-10-metros-ext-2010-branco-4830152/p?idsku=9331" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238144/vitrine/238144.jpg" alt="EXTENSÃO INTELBRAS 3T/2P 10M 4830152 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: EXTENSÃO INTELBRAS 3T/2P 10M 4830152 BR: Extensão elétrica que é um acessório prático e útil para o cliente, especialmente considerando seu interesse em eletroportáteis e eletrônicos.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/extensao-10-metros-intelbras-2-pinos-preto-4830149/p?idsku=9330" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238143/vitrine/238143.jpg" alt="EXTENSÃO INTELBRAS 3T/2P 10M 4830149 PT"><br>
+                            <span class="">EXTENSÃO INTELBRAS 3T/2P 10M 4830149 PT<br>
+                            R$64.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/extensao-intelbras-3-tomadas-3-pinos-10a-5-metros-ext-3005-preto-4830169/p?idsku=31303" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/images/catalog/farma/no_image.jpg" alt="EXTENSÃO INTELBRAS 3T/3P 5M 4830169 PT"><br>
+                            <span class="">EXTENSÃO INTELBRAS 3T/3P 5M 4830169 PT<br>
+                            R$54.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/extensao-intelbras-3-tomadas-3-pinos-10a-5-metros-ext-3005-branco-4830146/p?idsku=9334" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238147/vitrine/238147.jpg" alt="EXTENSÃO INTELBRAS 3T/3P 5M 4830146 BR"><br>
+                            <span class="">EXTENSÃO INTELBRAS 3T/3P 5M 4830146 BR<br>
+                            R$54.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">JG 3P UTENSÍLIOS TRAMONTINA 25199/011 PT - R$34.00</strong>
+                <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-3-pecas-ability-em-nylon-preto-25199011/p?idsku=26260" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230095/vitrine/230095.jpg" alt="JG 3P UTENSÍLIOS TRAMONTINA 25199/011 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: JG 3P UTENSÍLIOS TRAMONTINA 25199/011 PT: Utensílios de cozinha da Tramontina, que são práticos e de qualidade, complementando as compras de eletroportáteis e alinhando-se ao estilo de vida do cliente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-3-pecas-ability-em-nylon-vermelho-25199711/p?idsku=17129" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230097/vitrine/230097.jpg" alt="JG 3P UTENSÍLIOS TRAMONTINA 25199/711 VM"><br>
+                            <span class="">JG 3P UTENSÍLIOS TRAMONTINA 25199/711 VM<br>
+                            R$34.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-5-pecas-ability-em-nylon-vermelho-25199707/p?idsku=17128" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230096/vitrine/230096.jpg" alt="JG 5P UTENSÍLIOS TRAMONTINA 25199/707 VM"><br>
+                            <span class="">JG 5P UTENSÍLIOS TRAMONTINA 25199/707 VM<br>
+                            R$48.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">MOUSE C/F LOGITECH M90 PT (ING) - R$39.00</strong>
+                <a href="https://www.bemol.com.br/mouse-com-fio-logitech-preto-m90/p?idsku=11464" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/8/198130/vitrine/198130.jpg" alt="MOUSE C/F LOGITECH M90 PT (ING)"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: MOUSE C/F LOGITECH M90 PT (ING): Acessório de informática que complementa o uso de notebooks, alinhando-se ao histórico de compras do cliente em produtos de informática.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">FERRO B+D VAPOR FX1000-BR BR/RX - R$94.00</strong>
+                <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-127v-1200w-branco-fx1000/p?idsku=2014" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/9/199240/vitrine/199240.jpg" alt="FERRO B+D VAPOR FX1000-BR BR/RX"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR FX1000-BR BR/RX: Um eletroportátil de qualidade da Black+Decker, que combina eficiência e design moderno, alinhando-se ao gosto do cliente por produtos práticos e funcionais.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">SANDUICHEIRA MONDIAL FAST GRILL S-12 PT - R$149.00</strong>
+                <a href="https://www.bemol.com.br/sanduicheira-fast-grill-sandwich-mondial-s-12-750-w-antiaderente-110-v-preto/p?idsku=1278" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/6/166229/vitrine/166229.jpg" alt="SANDUICHEIRA MONDIAL FAST GRILL S-12 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SANDUICHEIRA MONDIAL FAST GRILL S-12 PT: Produto da marca Mondial, que o cliente já comprou anteriormente, e está dentro da faixa de preço habitual. Ideal para preparar sanduíches de forma rápida e prática.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/sanduicheira-mondial-pratic-grill-chapa-antiaderente-potencia-750w-luz-indicadora-127v-preto-sn-01/p?idsku=13652" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/7/217701/vitrine/217701.jpg" alt="SANDUICHEIRA GRILL MONDIAL SN-01 PT"><br>
+                            <span class="">SANDUICHEIRA GRILL MONDIAL SN-01 PT<br>
+                            R$156.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">LIQUID BRITÂNIA DIAMANTE 800 1050W PT - R$184.00</strong>
+                <a href="https://www.bemol.com.br/liquidificador-britania-diamante-800-127v-cor-preto/p?idsku=1992" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/9/199072/vitrine/199072.jpg" alt="LIQUID BRITÂNIA DIAMANTE 800 1050W PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIQUID BRITÂNIA DIAMANTE 800 1050W PT: Liquidificador da Britânia, que oferece potência e eficiência, complementando a linha de eletroportáteis que o cliente já possui.</div>
+                    </div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">CADEIRA GAMER DAZZ X-ROCKER PT - R$836.00</strong>
+                <a href="https://www.bemol.com.br/cadeira-gamer-dazz-x-rocker-preto/p?idsku=42249" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/4/224282/vitrine/224282.jpg" alt="CADEIRA GAMER DAZZ X-ROCKER PT"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/sanduicheira-grill-black-decker-cuisine-expert-700w-127v-preto-gs800/p?idsku=4812" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220335/vitrine/220335.jpg" alt="SANDUICHEIRA GRILL B+D GS800 PT"></div>
-            </a>
-            <div class="promocao-texto"><strong>SANDUICHEIRA GRILL B+D GS800 PT</strong> - R$156.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SANDUICHEIRA GRILL B+D GS800 PT: Outra sanduicheira de uma marca preferida, Black+Decker, que oferece versatilidade e eficiência, ideal para o estilo de vida prático do cliente.</div>
+            <div class="produto off-target">
+                <strong class="">VIOLÃO ACÚS ARTILUX 6 CORDAS ATL831 (MP) - R$223.00</strong>
+                <a href="https://www.bemol.com.br/violao-acustico-artilux-6-cordas-atl831--mp-/p?idsku=65788" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/4/264454/vitrine/264454.jpg" alt="VIOLÃO ACÚS ARTILUX 6 CORDAS ATL831 (MP)"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/sanduicheira-fast-grill-sandwich-mondial-s-12-750-w-antiaderente-110-v-preto/p?idsku=1278" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/6/166229/vitrine/166229.jpg" alt="SANDUICHEIRA MONDIAL FAST GRILL S-12 PT"></div>
-            </a>
-            <div class=""><strong>SANDUICHEIRA MONDIAL FAST GRILL S-12 PT</strong> - R$149.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SANDUICHEIRA MONDIAL FAST GRILL S-12 PT: A sanduicheira Mondial é uma escolha prática e eficiente, alinhada com a preferência do cliente por eletroportáteis da marca Mondial, que oferece bom custo-benefício.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/sanduicheira-mondial-pratic-grill-chapa-antiaderente-potencia-750w-luz-indicadora-127v-preto-sn-01/p?idsku=13652" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/7/217701/vitrine/217701.jpg" alt="SANDUICHEIRA GRILL MONDIAL SN-01 PT"><br>
-                        <span class="">SANDUICHEIRA GRILL MONDIAL SN-01 PT<br>
-                        R$156.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-127v-1200w-branco-fx1000/p?idsku=2014" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/9/199240/vitrine/199240.jpg" alt="FERRO B+D VAPOR FX1000-BR BR/RX"></div>
-            </a>
-            <div class=""><strong>FERRO B+D VAPOR FX1000-BR BR/RX</strong> - R$94.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR FX1000-BR BR/RX: Este ferro de passar é ideal para o cliente que valoriza praticidade e eficiência, além de ser de uma marca reconhecida, Black+Decker, que já foi escolhida anteriormente.</div>
+            <div class="produto off-target">
+                <strong class="">HEADPHONE JBL BT T520 PT - R$289.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-preto-520bt/p?idsku=903" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230423/vitrine/230423.jpg" alt="HEADPHONE JBL BT T520 PT"></div>
+                </a>
+            <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-azul-520bt/p?idsku=904" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230424/vitrine/230424.jpg" alt="HEADPHONE JBL BT T520 AZ"><br>
+                            <span class="">HEADPHONE JBL BT T520 AZ<br>
+                            R$289.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto off-target">
+                <strong class="">CONTROLE SONY PS4 S/F JET BLACK* - R$349.00</strong>
+                <a href="https://www.bemol.com.br/controle-sem-fio-sony-ps4-jet-black/p?idsku=73491" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/9/269344/vitrine/269344.jpg" alt="CONTROLE SONY PS4 S/F JET BLACK*"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/liquidificador-walita-daily-550w-2v-pulsar-jarra-2-litros-preto/p?idsku=355" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/8/198423/vitrine/198423.jpg" alt="LIQUID WALITA DAILY RI2110/91 550W PT"></div>
-            </a>
-            <div class=""><strong>LIQUID WALITA DAILY RI2110/91 550W PT</strong> - R$149.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIQUID WALITA DAILY RI2110/91 550W PT: O liquidificador Walita combina potência e design moderno, refletindo a preferência do cliente por produtos práticos e de qualidade na cozinha.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/liquidificador-walita-daily-550w-2v-pulsar-jarra-2-litros-vermelho/p?idsku=356" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/8/198424/vitrine/198424.jpg" alt="LIQUID WALITA DAILY RI2110/41 550W VM"><br>
-                        <span class="">LIQUID WALITA DAILY RI2110/41 550W VM<br>
-                        R$149.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/mouse-com-fio-logitech-preto-m90/p?idsku=11464" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/8/198130/vitrine/198130.jpg" alt="MOUSE C/F LOGITECH M90 PT (ING)"></div>
-            </a>
-            <div class=""><strong>MOUSE C/F LOGITECH M90 PT (ING)</strong> - R$39.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MOUSE C/F LOGITECH M90 PT (ING): Um mouse de uma marca confiável que complementa o histórico de compras do cliente em acessórios de informática, mantendo a qualidade e eficiência.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-3-pecas-ability-em-nylon-preto-25199011/p?idsku=26260" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230095/vitrine/230095.jpg" alt="JG 3P UTENSÍLIOS TRAMONTINA 25199/011 PT"></div>
-            </a>
-            <div class=""><strong>JG 3P UTENSÍLIOS TRAMONTINA 25199/011 PT</strong> - R$34.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: JG 3P UTENSÍLIOS TRAMONTINA 25199/011 PT: Os utensílios Tramontina são práticos e de alta qualidade, alinhando-se com a preferência do cliente por produtos que facilitam o dia a dia na cozinha.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-3-pecas-ability-em-nylon-vermelho-25199711/p?idsku=17129" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230097/vitrine/230097.jpg" alt="JG 3P UTENSÍLIOS TRAMONTINA 25199/711 VM"><br>
-                        <span class="">JG 3P UTENSÍLIOS TRAMONTINA 25199/711 VM<br>
-                        R$34.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/jogo-de-utensilios-tramontina-5-pecas-ability-em-nylon-vermelho-25199707/p?idsku=17128" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230096/vitrine/230096.jpg" alt="JG 5P UTENSÍLIOS TRAMONTINA 25199/707 VM"><br>
-                        <span class="">JG 5P UTENSÍLIOS TRAMONTINA 25199/707 VM<br>
-                        R$48.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/liquidificador-mondial-turbo-2-7l-900w-127v-preto-4945-05/p?idsku=11308" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/4/194295/vitrine/194295.jpg" alt="LIQUID MONDIAL TURBO L900-FB 900W PT"></div>
-            </a>
-            <div class=""><strong>LIQUID MONDIAL TURBO L900-FB 900W PT</strong> - R$188.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIQUID MONDIAL TURBO L900-FB 900W PT: Este liquidificador potente da Mondial é uma excelente adição, refletindo a preferência do cliente por produtos de qualidade e eficiência na cozinha.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/liquidificador-mondial-127v-potencia-500w-60hz-vermelho-l-99-fr/p?idsku=3444" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212899/vitrine/212899.jpg" alt="LIQUID MONDIAL TURBO PW L-99 FR 500W VM"><br>
-                        <span class="">LIQUID MONDIAL TURBO PW L-99 FR 500W VM<br>
-                        R$174.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/extensao-intelbras-3-tomadas-2-pinos-10a-10-metros-ext-2010-branco-4830152/p?idsku=9331" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238144/vitrine/238144.jpg" alt="EXTENSÃO INTELBRAS 3T/2P 10M 4830152 BR"></div>
-            </a>
-            <div class=""><strong>EXTENSÃO INTELBRAS 3T/2P 10M 4830152 BR</strong> - R$56.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: EXTENSÃO INTELBRAS 3T/2P 10M 4830152 BR: Uma extensão prática que complementa o uso de eletroportáteis, garantindo que o cliente tenha sempre energia disponível para seus aparelhos.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/extensao-intelbras-3-tomadas-3-pinos-10a-5-metros-ext-3005-branco-4830146/p?idsku=9334" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238147/vitrine/238147.jpg" alt="EXTENSÃO INTELBRAS 3T/3P 5M 4830146 BR"><br>
-                        <span class="">EXTENSÃO INTELBRAS 3T/3P 5M 4830146 BR<br>
-                        R$54.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/extensao-10-metros-intelbras-2-pinos-preto-4830149/p?idsku=9330" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/8/238143/vitrine/238143.jpg" alt="EXTENSÃO INTELBRAS 3T/2P 10M 4830149 PT"><br>
-                        <span class="">EXTENSÃO INTELBRAS 3T/2P 10M 4830149 PT<br>
-                        R$64.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ventilador-de-mesa-mallory-30cm-turbo-compact-preto-e-grafite/p?idsku=26332" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230707/vitrine/230707.jpg" alt="VENT MESA 30 MALLORY TURBO COMPACT PT/GF"></div>
-            </a>
-            <div class=""><strong>VENT MESA 30 MALLORY TURBO COMPACT PT/GF</strong> - R$126.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: VENT MESA 30 MALLORY TURBO COMPACT PT/GF: Este ventilador é uma solução eficiente e econômica para o cliente, que busca produtos que ofereçam conforto e praticidade em seu dia a dia.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/ventilador-de-mesa-mallory-40cm-turbo-fresh-preto/p?idsku=26333" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230708/vitrine/230708.jpg" alt="VENT MESA 40 MALLORY TURBO FRESH PT"><br>
-                        <span class="">VENT MESA 40 MALLORY TURBO FRESH PT<br>
-                        R$262.00</span>
-                    </a>
-                </div>
-                </div></div>
         <p></p>
     </body>
     </html>

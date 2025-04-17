@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,117 +73,121 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Sheila</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/escova-secadora-mondial-preto-e-rose-erb-01/p?idsku=18762" target="_blank">
-                <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/7/237216/vitrine/237216.jpg" alt="ESCOVA ROTATIVA MONDIAL ERB-01 PT/RS"></div>
-            </a>
-            <div class="promocao-texto"><strong>ESCOVA ROTATIVA MONDIAL ERB-01 PT/RS</strong> - R$249.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: ESCOVA ROTATIVA MONDIAL ERB-01 PT/RS: A escova secadora é um produto que combina praticidade e eficiência, ideal para o cliente que valoriza a beleza e o cuidado pessoal.</div>
+            <div class="produto">
+                <strong class="promocao-texto">VAPORIZADOR WALITA PORTÁTIL STH3020 BR - R$379.00</strong>
+                <a href="https://www.bemol.com.br/vaporizador-philips-walita-portatil-branco-sth3020-12/p?idsku=27384" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/6/236928/vitrine/236928.jpg" alt="VAPORIZADOR WALITA PORTÁTIL STH3020 BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: VAPORIZADOR WALITA PORTÁTIL STH3020 BR: O vaporizador portátil é uma excelente adição para quem busca praticidade no dia a dia, especialmente para o cliente que já demonstrou interesse em eletroportáteis.</div>
+                    </div>
+            <div class="produto">
+                <strong class="promocao-texto">FRITAD MULTILASER AFRYER 4L GO205 PT - R$379.00</strong>
+                <a href="https://www.bemol.com.br/fritadeira-multilaser-air-fryer-4-litros-preto-go205/p?idsku=31858" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/2/242516/vitrine/242516.jpg" alt="FRITAD MULTILASER AFRYER 4L GO205 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FRITAD MULTILASER AFRYER 4L GO205 PT: A fritadeira Air Fryer é uma opção saudável e prática, alinhada ao interesse do cliente por eletroportáteis que facilitam o preparo de refeições.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">BALANÇA DE COZINHA B+D ATÉ 5KG BC500 IN - R$129.00</strong>
+                <a href="https://www.bemol.com.br/balanca-de-cozinha-black-decker-ate-5kg-inox-bc500/p?idsku=21470" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201891/vitrine/201891.jpg" alt="BALANÇA DE COZINHA B+D ATÉ 5KG BC500 IN"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: BALANÇA DE COZINHA B+D ATÉ 5KG BC500 IN: A balança de cozinha é um acessório útil para quem gosta de cozinhar, complementando a variedade de utensílios que o cliente já possui.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">MINI PROCESSADOR B+D HC32P-BR PR - R$189.00</strong>
+                <a href="https://www.bemol.com.br/mini-processador-black-decker-110v-preto-e-prata-hc32p/p?idsku=1513" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184337/vitrine/184337.jpg" alt="MINI PROCESSADOR B+D HC32P-BR PR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: MINI PROCESSADOR B+D HC32P-BR PR: O mini processador Black+Decker é ideal para o cliente que busca eficiência e praticidade na cozinha, complementando bem os eletroportáteis já adquiridos.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">CANECA RELOBRAZ LOVE 2 280ML 77220 - R$28.00</strong>
+                <a href="https://www.bemol.com.br/caneca-relobraz-love-2-280ml-sortido-77220/p?idsku=24919" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219071/vitrine/219071.jpg" alt="CANECA RELOBRAZ LOVE 2 280ML 77220"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CANECA RELOBRAZ LOVE 2 280ML 77220: A caneca é um item decorativo e funcional, ideal para o cliente que aprecia produtos de utilidade doméstica com design atraente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">KIT 4P POTES UZ CONECTA UZ405 VM - R$32.00</strong>
+                <a href="https://www.bemol.com.br/kit-04-potes-organizador-uz-conecta-vermelho-uz405/p?idsku=3807" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/5/215060/vitrine/215060.jpg" alt="KIT 4P POTES UZ CONECTA UZ405 VM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: KIT 4P POTES UZ CONECTA UZ405 VM: Os potes organizadores são ótimos para manter a cozinha organizada, atendendo à necessidade do cliente por praticidade e funcionalidade em utilidades domésticas.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">PEGADOR P/CARNE TRAMONTINA 26593/100 PT - R$74.00</strong>
+                <a href="https://www.bemol.com.br/pegador-de-carne-tramontina-churrasco-black-26593100/p?idsku=26254" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230083/vitrine/230083.jpg" alt="PEGADOR P/CARNE TRAMONTINA 26593/100 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PEGADOR P/CARNE TRAMONTINA 26593/100 PT: Este pegador de carne da Tramontina é prático e funcional, ideal para o cliente que valoriza utensílios de cozinha de qualidade e design moderno.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">CAÇAROLA TRAMONTINA TURIM 20 20261820 VM - R$108.00</strong>
+                <a href="https://www.bemol.com.br/cacarola-tramontina-turim-aluminio-com-revestimento-antiaderente-20cm-2-8l-vermelha-20261820/p?idsku=14036" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219550/vitrine/219550.jpg" alt="CAÇAROLA TRAMONTINA TURIM 20 20261820 VM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CAÇAROLA TRAMONTINA TURIM 20 20261820 VM: A caçarola Tramontina combina qualidade e funcionalidade, com revestimento antiaderente, ideal para o cliente que aprecia utensílios de cozinha duráveis e práticos.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">ASSADEIRA TRAMONTINA FD 28 20051/028 PT - R$68.00</strong>
+                <a href="https://www.bemol.com.br/assadeira-tramontina-aluminiofunda-retangular-preto-20051-028/p?idsku=107" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/0/8/108306/vitrine/108306.jpg" alt="ASSADEIRA TRAMONTINA FD 28 20051/028 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: ASSADEIRA TRAMONTINA FD 28 20051/028 PT: Esta assadeira é perfeita para o cliente que gosta de cozinhar, oferecendo praticidade e resistência, características valorizadas nas compras anteriores.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">FONE OUVIDO JBL TUNE 310C BR - R$79.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-branco-310c/p?idsku=68478" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/6/256433/vitrine/256433.jpg" alt="FONE OUVIDO JBL TUNE 310C BR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FONE OUVIDO JBL TUNE 310C BR: Os fones de ouvido são um complemento ideal para o cliente que já demonstrou interesse em produtos de áudio, oferecendo qualidade e conforto.</div>
+                    </div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">BOLSA MICHAEL KORS SHOULDER JET SET G(BI - R$949.00</strong>
+                <a href="https://www.bemol.com.br/bolsa-de-ombro-michael-kors-jet-set-logo--bi-/p?idsku=56434" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/7/257087/vitrine/257087.jpg" alt="BOLSA MICHAEL KORS SHOULDER JET SET G(BI"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/cacarola-tramontina-turim-aluminio-com-revestimento-antiaderente-20cm-2-8l-vermelha-20261820/p?idsku=14036" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219550/vitrine/219550.jpg" alt="CAÇAROLA TRAMONTINA TURIM 20 20261820 VM"></div>
-            </a>
-            <div class=""><strong>CAÇAROLA TRAMONTINA TURIM 20 20261820 VM</strong> - R$108.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CAÇAROLA TRAMONTINA TURIM 20 20261820 VM: A caçarola Tramontina é vermelha, alinhando-se à preferência de cor do cliente. Além disso, é um produto de uma marca que o cliente já comprou, garantindo qualidade e durabilidade.</div>
+            <div class="produto off-target">
+                <strong class="">SECADOR PHILCO TOURMALINE PSC2450 2200W - R$149.00</strong>
+                <a href="https://www.bemol.com.br/secador-de-cabelos-philco-bivolt-2200w-ions-tourmaline-preto-e-dourado-psc2450/p?idsku=72201" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263769/vitrine/263769.jpg" alt="SECADOR PHILCO TOURMALINE PSC2450 2200W"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/panela-tramontina-turim-aluminio-com-revestimento-antiaderente-18cm-2l-vermelha---20262818/p?idsku=44464" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219562/vitrine/219562.jpg" alt="PANELA TRAMONTINA TURIM 18 20262818 VM"></div>
-            </a>
-            <div class=""><strong>PANELA TRAMONTINA TURIM 18 20262818 VM</strong> - R$96.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PANELA TRAMONTINA TURIM 18 20262818 VM: Outra panela da marca Tramontina, que o cliente já demonstrou preferência. A cor vermelha e o design moderno são consistentes com o estilo do cliente.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/panela-tramontina-turim-aluminio-com-revestimento-antiaderente-16cm-1-4l-vermelha---20262816/p?idsku=44463" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/9/219561/vitrine/219561.jpg" alt="PANELA TRAMONTINA TURIM 16 20262816 VM"><br>
-                        <span class="">PANELA TRAMONTINA TURIM 16 20262816 VM<br>
-                        R$76.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/pegador-de-carne-tramontina-churrasco-black-26593100/p?idsku=26254" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230083/vitrine/230083.jpg" alt="PEGADOR P/CARNE TRAMONTINA 26593/100 PT"></div>
-            </a>
-            <div class=""><strong>PEGADOR P/CARNE TRAMONTINA 26593/100 PT</strong> - R$74.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PEGADOR P/CARNE TRAMONTINA 26593/100 PT: Este pegador de carne é um utensílio prático e eficiente, ideal para complementar as panelas e caçarolas que o cliente já possui, mantendo a consistência na escolha de produtos Tramontina.</div>
+            <div class="produto off-target">
+                <strong class="">CÔMODA 2P/7G DEMÓBILE LONDON BR - R$1066.00</strong>
+                <a href="https://www.bemol.com.br/comoda-2-portas-e-7-gavetas-demobile-london-branco/p?idsku=51185" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/2/242467/vitrine/242467.jpg" alt="CÔMODA 2P/7G DEMÓBILE LONDON BR"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/assadeira-tramontina-aluminiofunda-retangular-preto-20051-028/p?idsku=107" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/0/8/108306/vitrine/108306.jpg" alt="ASSADEIRA TRAMONTINA FD 28 20051/028 PT"></div>
-            </a>
-            <div class=""><strong>ASSADEIRA TRAMONTINA FD 28 20051/028 PT</strong> - R$68.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: ASSADEIRA TRAMONTINA FD 28 20051/028 PT: A assadeira Tramontina é um item complementar para o uso na cozinha, ideal para assar diversos pratos. A marca é uma das preferidas do cliente, garantindo qualidade.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/mini-processador-black-decker-110v-preto-e-prata-hc32p/p?idsku=1513" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184337/vitrine/184337.jpg" alt="MINI PROCESSADOR B+D HC32P-BR PR"></div>
-            </a>
-            <div class=""><strong>MINI PROCESSADOR B+D HC32P-BR PR</strong> - R$189.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MINI PROCESSADOR B+D HC32P-BR PR: O mini processador Black+Decker é prático e eficiente, ideal para o cliente que valoriza a funcionalidade na cozinha. A marca é uma das preferidas do cliente.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/balanca-de-cozinha-black-decker-ate-5kg-inox-bc500/p?idsku=21470" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201891/vitrine/201891.jpg" alt="BALANÇA DE COZINHA B+D ATÉ 5KG BC500 IN"></div>
-            </a>
-            <div class=""><strong>BALANÇA DE COZINHA B+D ATÉ 5KG BC500 IN</strong> - R$129.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: BALANÇA DE COZINHA B+D ATÉ 5KG BC500 IN: A balança de cozinha Black+Decker é um item útil para quem gosta de cozinhar, complementando a praticidade que o cliente busca em seus utensílios.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/conjunto-de-cabides-latcor-5-pecas-lsmd011/p?idsku=22110" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/6/206403/vitrine/206403.jpg" alt="CJ 5P CABIDES LATCOR LSMD011"></div>
-            </a>
-            <div class=""><strong>CJ 5P CABIDES LATCOR LSMD011</strong> - R$14.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CJ 5P CABIDES LATCOR LSMD011: Os cabides são uma solução prática para organização, alinhando-se ao interesse do cliente por utilidades domésticas e ajudando a manter a casa organizada.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/conjunto-de-cabides-latcor-5-pecas-lsn001/p?idsku=12133" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/6/206401/vitrine/206401.jpg" alt="CJ 5P CABIDES LATCOR LSN001"><br>
-                        <span class="">CJ 5P CABIDES LATCOR LSN001<br>
-                        R$34.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/kit-04-potes-organizador-uz-conecta-vermelho-uz405/p?idsku=3807" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/5/215060/vitrine/215060.jpg" alt="KIT 4P POTES UZ CONECTA UZ405 VM"></div>
-            </a>
-            <div class=""><strong>KIT 4P POTES UZ CONECTA UZ405 VM</strong> - R$32.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: KIT 4P POTES UZ CONECTA UZ405 VM: Os potes organizadores são ideais para otimizar o espaço na cozinha, complementando a funcionalidade dos utensílios que o cliente já possui.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/suporte-articulado-de-parede-para-tvs-de-15-a-43-elg-vesa-200-full-20-pro-preto/p?idsku=2141" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/1/201982/vitrine/201982.jpg" alt="SUP P/TV ELG ARTICULADO FULL 20PRO PT"></div>
-            </a>
-            <div class=""><strong>SUP P/TV ELG ARTICULADO FULL 20PRO PT</strong> - R$174.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SUP P/TV ELG ARTICULADO FULL 20PRO PT: O suporte para TV é um complemento ideal após a compra da Smart TV, ajudando a organizar o ambiente e garantindo segurança na instalação.</div>
+            <div class="produto off-target">
+                <strong class="">TV 43 SAMSUNG SMART LED FHD UN43T5300AGX - R$1799.00</strong>
+                <a href="https://www.bemol.com.br/smart-tv-samsung-43-full-hd-led-wi-fi-hdr-e-hdmi-un43t5300agxzd/p?idsku=2497" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/6/206124/vitrine/206124.jpg" alt="TV 43 SAMSUNG SMART LED FHD UN43T5300AGX"></div>
+                </a>
             </div>
         <p></p>
     </body>

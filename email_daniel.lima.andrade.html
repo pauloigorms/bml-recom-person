@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,149 +73,171 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Daniel</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/liquidificador-mondial-turbo-2-7l-900w-127v-preto-4945-05/p?idsku=11308" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/4/194295/vitrine/194295.jpg" alt="LIQUID MONDIAL TURBO L900-FB 900W PT"></div>
-            </a>
-            <div class=""><strong>LIQUID MONDIAL TURBO L900-FB 900W PT</strong> - R$188.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIQUID MONDIAL TURBO L900-FB 900W PT: Este liquidificador da Mondial é uma excelente escolha, pois combina potência e praticidade, características valorizadas pelo cliente em suas compras anteriores de eletroportáteis.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/liquidificador-mondial-127v-potencia-500w-60hz-vermelho-l-99-fr/p?idsku=3444" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212899/vitrine/212899.jpg" alt="LIQUID MONDIAL TURBO PW L-99 FR 500W VM"><br>
-                        <span class="">LIQUID MONDIAL TURBO PW L-99 FR 500W VM<br>
-                        R$174.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/lixeira-30-litros-tramontina-94538-130-30-cm-com-pedal-inox/p?idsku=1270" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165185/vitrine/165185.jpg" alt="LIXEIRA 30L TRAMONTINA C/P 94538/130 IN"></div>
-            </a>
-            <div class=""><strong>LIXEIRA 30L TRAMONTINA C/P 94538/130 IN</strong> - R$369.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIXEIRA 30L TRAMONTINA C/P 94538/130 IN: A lixeira Tramontina é um produto de alta qualidade e design moderno, alinhando-se ao gosto do cliente por itens funcionais e estéticos para a casa.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/lixeira-20-litros-tramontina-com-pedal-e-alca-para-transporte-94538-120-inox/p?idsku=1269" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165184/vitrine/165184.jpg" alt="LIXEIRA 20L TRAMONTINA C/P 94538/120 IN"><br>
-                        <span class="">LIXEIRA 20L TRAMONTINA C/P 94538/120 IN<br>
-                        R$264.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/lixeira-12-litros-tramontina-com-pedal-e-alca-para-transporte-94538-112-inox/p?idsku=1268" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165183/vitrine/165183.jpg" alt="LIXEIRA 12L TRAMONTINA C/P 94538/112 IN"><br>
-                        <span class="">LIXEIRA 12L TRAMONTINA C/P 94538/112 IN<br>
-                        R$192.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/forma-retangular-750ml-marinex-nadir-figueiredo-gd16214013n/p?idsku=28655" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/0/200641/vitrine/200641.jpg" alt="FORMA NADIR RET 750ML GD16214013N"></div>
-            </a>
-            <div class=""><strong>FORMA NADIR RET 750ML GD16214013N</strong> - R$36.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FORMA NADIR RET 750ML GD16214013N: A forma de vidro da Nadir é ideal para o cliente que valoriza utensílios de cozinha práticos e duráveis, complementando suas compras anteriores de utilidades domésticas.</div>
+            <div class="produto">
+                <strong class="">NOTEBOOK POSITIVO C4128B CEL 4/128GB CZ - R$1579.00</strong>
+                <a href="https://www.bemol.com.br/notebook-positivo-duo-2-em-1-intel-celeron-4gb-128gb-tela-11-6-windows11-cinza-c4128b-3/p?idsku=7223" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/9/229241/vitrine/229241.jpg" alt="NOTEBOOK POSITIVO C4128B CEL 4/128GB CZ"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: NOTEBOOK POSITIVO C4128B CEL 4/128GB CZ: O notebook Positivo é uma opção acessível e prática para o dia a dia, ideal para o cliente que valoriza tecnologia e funcionalidade em suas compras.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">VENT MESA 40 MONDIAL VSP-40-B PT - R$236.00</strong>
+                <a href="https://www.bemol.com.br/ventilador-de-mesa-mondial-super-power-40cm-6-pas-127v-preto-vps-40-b/p?idsku=4301" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/8/218115/vitrine/218115.jpg" alt="VENT MESA 40 MONDIAL VSP-40-B PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: VENT MESA 40 MONDIAL VSP-40-B PT: O ventilador de mesa Mondial é uma escolha prática e funcional, ideal para o clima quente. A cor preta e o design moderno se alinham com as preferências do cliente por utilidades domésticas de qualidade.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">COLHER P/ARROZ TRAMONTINA 63815/101 IN - R$18.00</strong>
+                <a href="https://www.bemol.com.br/colher-para-arroz-tramontina-extrata-63815-101-aco-inox/p?idsku=1605" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187603/vitrine/187603.jpg" alt="COLHER P/ARROZ TRAMONTINA 63815/101 IN"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: COLHER P/ARROZ TRAMONTINA 63815/101 IN: A colher para arroz Tramontina é um utensílio essencial na cozinha, com qualidade e durabilidade que atendem às expectativas do cliente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/concha-para-servir-terrina-extrata-tramontina-63815-091-aco-inox/p?idsku=1604" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187602/vitrine/187602.jpg" alt="CONCHA TRAMONTINA EXTRATA 63815/091 IN"><br>
+                            <span class="">CONCHA TRAMONTINA EXTRATA 63815/091 IN<br>
+                            R$38.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/escumadeira-tramontina-extrata-63815-221-aco-inox/p?idsku=1606" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187604/vitrine/187604.jpg" alt="ESPUMADEIRA TRAMONTINA 63815/221 IN"><br>
+                            <span class="">ESPUMADEIRA TRAMONTINA 63815/221 IN<br>
+                            R$22.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/conjunto-de-utensilios-para-cozinha-3-pecas-tramontina-extrata-66815-730-aco-inox/p?idsku=1607" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187605/vitrine/187605.jpg" alt="CJ 3P UTENSÍLIOS TRAMONTINA 66815/730 IN"><br>
+                            <span class="">CJ 3P UTENSÍLIOS TRAMONTINA 66815/730 IN<br>
+                            R$78.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">FORMA NADIR RET 750ML GD16214013N - R$36.00</strong>
+                <a href="https://www.bemol.com.br/forma-retangular-750ml-marinex-nadir-figueiredo-gd16214013n/p?idsku=28655" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/0/200641/vitrine/200641.jpg" alt="FORMA NADIR RET 750ML GD16214013N"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FORMA NADIR RET 750ML GD16214013N: Esta forma de vidro é ideal para assar e servir, atendendo à necessidade do cliente por utilidades domésticas práticas e de qualidade, com um bom custo-benefício.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">FERRO B+D VAPOR SPEED FX3060 BR/AZ - R$169.00</strong>
+                <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-1200w-branco-e-azul-fx3060/p?idsku=2343" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204804/vitrine/204804.jpg" alt="FERRO B+D VAPOR SPEED FX3060 BR/AZ"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR SPEED FX3060 BR/AZ: Este ferro a vapor da Black+Decker é prático e eficiente, ideal para o cliente que valoriza tecnologia e qualidade em eletroportáteis.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">TÁBUA TRAMONTINA P/ANTEPASTO 13412351 - R$106.00</strong>
+                <a href="https://www.bemol.com.br/tabua-tramontina-para-antepasto-13412351/p?idsku=18946" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239365/vitrine/239365.jpg" alt="TÁBUA TRAMONTINA P/ANTEPASTO 13412351"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: TÁBUA TRAMONTINA P/ANTEPASTO 13412351: A tábua Tramontina é um item útil para preparar e servir, refletindo a preferência do cliente por produtos de qualidade e design funcional na cozinha.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">DISPENSER OU P/DETERGENTE DT500 PT - R$28.00</strong>
+                <a href="https://www.bemol.com.br/dispenser-para-detergente-martiplast-e-esponja-trium-650ml-preto-dt-500-ptf/p?idsku=14155" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220166/vitrine/220166.jpg" alt="DISPENSER OU P/DETERGENTE DT500 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: DISPENSER OU P/DETERGENTE DT500 PT: O dispenser para detergente é um acessório que traz organização e praticidade à cozinha, alinhando-se ao interesse do cliente por produtos que facilitam o dia a dia.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">ESCORREDOR DE LOUÇAS TRAMONTINA 61537000 - R$144.00</strong>
+                <a href="https://www.bemol.com.br/escorredor-de-loucas-tramontina-plurale-compacto-com-porta-talheres-grafite-61537000/p?idsku=7032" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/8/228632/vitrine/228632.jpg" alt="ESCORREDOR DE LOUÇAS TRAMONTINA 61537000"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: ESCORREDOR DE LOUÇAS TRAMONTINA 61537000: Este escorredor de louças é compacto e funcional, perfeito para otimizar o espaço na cozinha, alinhando-se ao estilo de vida prático do cliente.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">LIQUID MONDIAL TURBO L900-FB 900W PT - R$188.00</strong>
+                <a href="https://www.bemol.com.br/liquidificador-mondial-turbo-2-7l-900w-127v-preto-4945-05/p?idsku=11308" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/4/194295/vitrine/194295.jpg" alt="LIQUID MONDIAL TURBO L900-FB 900W PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIQUID MONDIAL TURBO L900-FB 900W PT: O liquidificador Mondial é potente e versátil, ideal para o cliente que busca praticidade na cozinha, com um design moderno que combina com suas preferências.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/liquidificador-mondial-127v-potencia-500w-60hz-vermelho-l-99-fr/p?idsku=3444" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212899/vitrine/212899.jpg" alt="LIQUID MONDIAL TURBO PW L-99 FR 500W VM"><br>
+                            <span class="">LIQUID MONDIAL TURBO PW L-99 FR 500W VM<br>
+                            R$174.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">LIXEIRA 30L TRAMONTINA C/P 94538/130 IN - R$369.00</strong>
+                <a href="https://www.bemol.com.br/lixeira-30-litros-tramontina-94538-130-30-cm-com-pedal-inox/p?idsku=1270" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165185/vitrine/165185.jpg" alt="LIXEIRA 30L TRAMONTINA C/P 94538/130 IN"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIXEIRA 30L TRAMONTINA C/P 94538/130 IN: A lixeira Tramontina combina qualidade e praticidade, com um design elegante em inox que se encaixa bem em ambientes modernos, refletindo o estilo do cliente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/lixeira-20-litros-tramontina-com-pedal-e-alca-para-transporte-94538-120-inox/p?idsku=1269" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165184/vitrine/165184.jpg" alt="LIXEIRA 20L TRAMONTINA C/P 94538/120 IN"><br>
+                            <span class="">LIXEIRA 20L TRAMONTINA C/P 94538/120 IN<br>
+                            R$264.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/lixeira-12-litros-tramontina-com-pedal-e-alca-para-transporte-94538-112-inox/p?idsku=1268" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/6/5/165183/vitrine/165183.jpg" alt="LIXEIRA 12L TRAMONTINA C/P 94538/112 IN"><br>
+                            <span class="">LIXEIRA 12L TRAMONTINA C/P 94538/112 IN<br>
+                            R$192.00</span>
+                        </a>
+                    </div>
+                    </div></div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">CARTEIRA MASC LEVI'S PT (BI) - R$196.00</strong>
+                <a href="https://www.bemol.com.br/carteira-levi-s-masculina-preto--bi-/p?idsku=70082" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/6/266302/vitrine/266302.jpg" alt="CARTEIRA MASC LEVI'S PT (BI)"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/dispenser-para-detergente-martiplast-e-esponja-trium-650ml-preto-dt-500-ptf/p?idsku=14155" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/0/220166/vitrine/220166.jpg" alt="DISPENSER OU P/DETERGENTE DT500 PT"></div>
-            </a>
-            <div class=""><strong>DISPENSER OU P/DETERGENTE DT500 PT</strong> - R$28.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: DISPENSER OU P/DETERGENTE DT500 PT: Este dispenser para detergente é prático e funcional, ajudando a manter a organização na cozinha, o que é uma prioridade para o cliente.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/escorredor-de-loucas-tramontina-plurale-compacto-com-porta-talheres-grafite-61537000/p?idsku=7032" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/8/228632/vitrine/228632.jpg" alt="ESCORREDOR DE LOUÇAS TRAMONTINA 61537000"></div>
-            </a>
-            <div class=""><strong>ESCORREDOR DE LOUÇAS TRAMONTINA 61537000</strong> - R$144.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: ESCORREDOR DE LOUÇAS TRAMONTINA 61537000: O escorredor Tramontina é compacto e ideal para cozinhas pequenas, atendendo à necessidade do cliente por produtos que otimizam o espaço e oferecem praticidade.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/colher-para-arroz-tramontina-extrata-63815-101-aco-inox/p?idsku=1605" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187603/vitrine/187603.jpg" alt="COLHER P/ARROZ TRAMONTINA 63815/101 IN"></div>
-            </a>
-            <div class=""><strong>COLHER P/ARROZ TRAMONTINA 63815/101 IN</strong> - R$18.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: COLHER P/ARROZ TRAMONTINA 63815/101 IN: A colher para arroz da Tramontina é um utensílio essencial e de alta qualidade, que se alinha ao padrão de compras do cliente em utensílios de cozinha.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/concha-para-servir-terrina-extrata-tramontina-63815-091-aco-inox/p?idsku=1604" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187602/vitrine/187602.jpg" alt="CONCHA TRAMONTINA EXTRATA 63815/091 IN"><br>
-                        <span class="">CONCHA TRAMONTINA EXTRATA 63815/091 IN<br>
-                        R$38.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/escumadeira-tramontina-extrata-63815-221-aco-inox/p?idsku=1606" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187604/vitrine/187604.jpg" alt="ESPUMADEIRA TRAMONTINA 63815/221 IN"><br>
-                        <span class="">ESPUMADEIRA TRAMONTINA 63815/221 IN<br>
-                        R$22.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/conjunto-de-utensilios-para-cozinha-3-pecas-tramontina-extrata-66815-730-aco-inox/p?idsku=1607" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/7/187605/vitrine/187605.jpg" alt="CJ 3P UTENSÍLIOS TRAMONTINA 66815/730 IN"><br>
-                        <span class="">CJ 3P UTENSÍLIOS TRAMONTINA 66815/730 IN<br>
-                        R$78.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/tabua-tramontina-para-antepasto-13412351/p?idsku=18946" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239365/vitrine/239365.jpg" alt="TÁBUA TRAMONTINA P/ANTEPASTO 13412351"></div>
-            </a>
-            <div class=""><strong>TÁBUA TRAMONTINA P/ANTEPASTO 13412351</strong> - R$106.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: TÁBUA TRAMONTINA P/ANTEPASTO 13412351: Esta tábua de corte é perfeita para o cliente que aprecia produtos de qualidade e design moderno na cozinha, complementando suas compras anteriores.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ferro-de-passar-a-vapor-black-decker-1200w-branco-e-azul-fx3060/p?idsku=2343" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204804/vitrine/204804.jpg" alt="FERRO B+D VAPOR SPEED FX3060 BR/AZ"></div>
-            </a>
-            <div class=""><strong>FERRO B+D VAPOR SPEED FX3060 BR/AZ</strong> - R$169.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: FERRO B+D VAPOR SPEED FX3060 BR/AZ: O ferro de passar Black+Decker é uma escolha prática e eficiente, ideal para o cliente que valoriza a qualidade e a funcionalidade em eletroportáteis.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ventilador-de-mesa-mondial-super-power-40cm-6-pas-127v-preto-vps-40-b/p?idsku=4301" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/8/218115/vitrine/218115.jpg" alt="VENT MESA 40 MONDIAL VSP-40-B PT"></div>
-            </a>
-            <div class=""><strong>VENT MESA 40 MONDIAL VSP-40-B PT</strong> - R$236.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: VENT MESA 40 MONDIAL VSP-40-B PT: O ventilador Mondial é uma opção prática e eficiente para o conforto em casa, alinhando-se ao interesse do cliente por eletroportáteis que oferecem qualidade.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/notebook-positivo-duo-2-em-1-intel-celeron-4gb-128gb-tela-11-6-windows11-cinza-c4128b-3/p?idsku=7223" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/2/9/229241/vitrine/229241.jpg" alt="NOTEBOOK POSITIVO C4128B CEL 4/128GB CZ"></div>
-            </a>
-            <div class=""><strong>NOTEBOOK POSITIVO C4128B CEL 4/128GB CZ</strong> - R$1579.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: NOTEBOOK POSITIVO C4128B CEL 4/128GB CZ: Este notebook é uma opção acessível e prática para o cliente que busca tecnologia para tarefas do dia a dia, complementando seu histórico de compras em eletrônicos.</div>
+            <div class="produto off-target">
+                <strong class="">HEADPHONE JBL BT T520 PT - R$289.00</strong>
+                <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-preto-520bt/p?idsku=903" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230423/vitrine/230423.jpg" alt="HEADPHONE JBL BT T520 PT"></div>
+                </a>
+            <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/fone-de-ouvido-jbl-tune-bluetooth-azul-520bt/p?idsku=904" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230424/vitrine/230424.jpg" alt="HEADPHONE JBL BT T520 AZ"><br>
+                            <span class="">HEADPHONE JBL BT T520 AZ<br>
+                            R$289.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto off-target">
+                <strong class="">CONSOLE SONY PS5 SLIM DISC BUNDLE 1TB(RC - R$3999.00</strong>
+                <a href="https://www.bemol.com.br/console-playstation-5-slim-returnal-e-ratchet-clank-1tb/p?idsku=18986" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/9/239748/vitrine/239748.jpg" alt="CONSOLE SONY PS5 SLIM DISC BUNDLE 1TB(RC"></div>
+                </a>
             </div>
         <p></p>
     </body>

@@ -18,6 +18,9 @@
                 padding: 15px;
                 margin: 20px 0;
             }
+            .produto.off-target {
+                background-color: #eeeeee;
+            }
             .produto img {
                 width: 180px;
                 border-radius: 4px;
@@ -30,23 +33,32 @@
                 font-weight: bold;
             }
             .produto strong {
-                font-size: 16px;
+                font-size: 17px;
+                display: block;
+                margin-bottom: 5px;
             }
             .alternativas {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 margin-top: 10px;
+                flex-wrap: wrap;
+            }
+            .alternativas-titulo {
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #3c4c77;
             }
             .alternativa {
                 background-color: #eef2fb;
-                padding: 8px;
+                padding: 5px;
                 border-radius: 6px;
                 text-align: center;
-                width: 140px;
-                font-size: 13px;
+                width: 110px;
+                font-size: 11px;
             }
             .alternativa img {
-                width: 100px;
+                width: 80px;
                 height: auto;
                 margin-bottom: 5px;
                 border-radius: 4px;
@@ -61,142 +73,164 @@
                 text-decoration: none;
                 color: #1a3fa3;
             }
+            .off-target-titulo {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+                color: #2a2a2a;
+            }
         </style>
     </head>
     <body>
         <h2>Olá, Jullyenne</h2>
         <p>Selecionamos algumas recomendações especiais para você:</p>
     
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/jogo-de-panelas-tramontina-7-pecas-linz-preto-28299006/p?idsku=57069" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/6/256465/vitrine/256465.jpg" alt="JG 7P PANELAS TRAMONTINA 28299006 PT"></div>
-            </a>
-            <div class=""><strong>JG 7P PANELAS TRAMONTINA 28299006 PT</strong> - R$396.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: JG 7P PANELAS TRAMONTINA 28299006 PT: O jogo de panelas Tramontina é ideal para o cliente que valoriza utensílios de cozinha de qualidade e durabilidade, além de se alinhar com suas preferências por marcas reconhecidas.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/jogo-de-panelas-tramontina-5-pecas-linz-rosa-28299405/p?idsku=57070" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/6/256467/vitrine/256467.jpg" alt="JG 5P PANELAS TRAMONTINA 28299405 RO"><br>
-                        <span class="">JG 5P PANELAS TRAMONTINA 28299405 RO<br>
-                        R$286.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/marmita-electrolux-lunch-box-preta-com-2-compartimentos-a15338601/p?idsku=3427" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212832/vitrine/212832.jpg" alt="MARMITA ELECTROLUX LUN BOX A15338601 PT"></div>
-            </a>
-            <div class=""><strong>MARMITA ELECTROLUX LUN BOX A15338601 PT</strong> - R$42.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: MARMITA ELECTROLUX LUN BOX A15338601 PT: A marmita Electrolux é prática e possui divisórias, atendendo à necessidade do cliente por produtos que facilitam a organização e o transporte de refeições.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/marmita-electrolux-lunch-box-vermelha-com-2-compartimentos-a15338201/p?idsku=12802" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212834/vitrine/212834.jpg" alt="MARMITA ELECTROLUX LUN BOX A15338201 VM"><br>
-                        <span class="">MARMITA ELECTROLUX LUN BOX A15338201 VM<br>
-                        R$42.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/liquidificador-britania-diamante-800-127v-cor-preto/p?idsku=1992" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/9/199072/vitrine/199072.jpg" alt="LIQUID BRITÂNIA DIAMANTE 800 1050W PT"></div>
-            </a>
-            <div class=""><strong>LIQUID BRITÂNIA DIAMANTE 800 1050W PT</strong> - R$184.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: LIQUID BRITÂNIA DIAMANTE 800 1050W PT: O liquidificador Britânia oferece potência e eficiência, características valorizadas pelo cliente, além de ser um eletroportátil que complementa sua linha de utilidades domésticas.</div>
+            <div class="produto">
+                <strong class="promocao-texto">SMARTWATCH X-WATCH XSWUQPI003A PXTX RS - R$349.00</strong>
+                <a href="https://www.bemol.com.br/smartwatch-x-watch-rose-xswuqpi0003-pxtx/p?idsku=48370" target="_blank">
+                    <div><img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248639/vitrine/248639.jpg" alt="SMARTWATCH X-WATCH XSWUQPI003A PXTX RS"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SMARTWATCH X-WATCH XSWUQPI003A PXTX RS: Outra opção de smartwatch que se alinha ao gosto do cliente por tecnologia, oferecendo funcionalidades que complementam seu estilo de vida ativo.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartwatch-x-watch-preto-xswuqpi0001-pxpx/p?idsku=48350" target="_blank">
+                            <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248637/vitrine/248637.jpg" alt="SMARTWATCH X-WATCH XSWUQPI001A PXPX PT"><br>
+                            <span class="promocao-texto">SMARTWATCH X-WATCH XSWUQPI001A PXPX PT<br>
+                            R$349.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartwatch-x-watch-preto-e-rose-xswuqpi0004-pxpx/p?idsku=48371" target="_blank">
+                            <img class="promocao-img" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248640/vitrine/248640.jpg" alt="SMARTWATCH X-WATCH XSWUQPI004A PXPX"><br>
+                            <span class="promocao-texto">SMARTWATCH X-WATCH XSWUQPI004A PXPX<br>
+                            R$349.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">PURIFICADOR IBBL VIVAX 77070001 PR - R$284.00</strong>
+                <a href="https://www.bemol.com.br/purificador-de-agua-ibbl-vivax-77040001-prata/p?idsku=11977" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204784/vitrine/204784.jpg" alt="PURIFICADOR IBBL VIVAX 77070001 PR"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: PURIFICADOR IBBL VIVAX 77070001 PR: O purificador IBBL é uma adição saudável e prática para a casa do cliente, que já demonstra interesse em produtos que melhoram a qualidade de vida.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">CAIXA FERRAMENTAS STANLEY 19 19013 PT/AM - R$98.00</strong>
+                <a href="https://www.bemol.com.br/caixa-de-ferramentas-stanley-preto-e-amarelo-19013/p?idsku=10718" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/4/7/147606/vitrine/147606.jpg" alt="CAIXA FERRAMENTAS STANLEY 19 19013 PT/AM"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CAIXA FERRAMENTAS STANLEY 19 19013 PT/AM: A caixa de ferramentas Stanley é perfeita para o cliente que gosta de DIY, oferecendo organização e praticidade para suas ferramentas, alinhando-se ao seu interesse por projetos de reforma.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">COOKTOP 5B ELECTROLUX GÁS KE5GP PT - R$699.00</strong>
+                <a href="https://www.bemol.com.br/cooktop-5-bocas-electrolux-a-gas-com-acendimento-automatico-ke5gp-bivolt/p?idsku=427" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/5/205063/vitrine/205063.jpg" alt="COOKTOP 5B ELECTROLUX GÁS KE5GP PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: COOKTOP 5B ELECTROLUX GÁS KE5GP PT: O cooktop Electrolux combina eficiência e design moderno, ideal para o cliente que busca praticidade na cozinha e já possui eletrodomésticos da marca.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">CJ 24P TALHER TRAMONTINA 23399/091 PT - R$78.00</strong>
+                <a href="https://www.bemol.com.br/conjunto-de-talheres-tramontina-24-pecas-lamina-de-aco-inox-cabos-de-polipropileno-preto/p?idsku=201" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/3/2/132948/vitrine/132948.jpg" alt="CJ 24P TALHER TRAMONTINA 23399/091 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: CJ 24P TALHER TRAMONTINA 23399/091 PT: O conjunto de talheres Tramontina é uma escolha prática e de qualidade, ideal para complementar as compras do cliente em utensílios de cozinha.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">SMARTWATCH X-WATCH XSWUQPI004A PXPX - R$349.00</strong>
+                <a href="https://www.bemol.com.br/smartwatch-x-watch-preto-e-rose-xswuqpi0004-pxpx/p?idsku=48371" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248640/vitrine/248640.jpg" alt="SMARTWATCH X-WATCH XSWUQPI004A PXPX"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: SMARTWATCH X-WATCH XSWUQPI004A PXPX: O smartwatch X-Watch é uma escolha adequada, pois complementa o interesse do cliente por tecnologia e conectividade, além de ser uma marca que já adquiriu anteriormente.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartwatch-x-watch-rose-xswuqpi0003-pxtx/p?idsku=48370" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248639/vitrine/248639.jpg" alt="SMARTWATCH X-WATCH XSWUQPI003A PXTX RS"><br>
+                            <span class="">SMARTWATCH X-WATCH XSWUQPI003A PXTX RS<br>
+                            R$349.00</span>
+                        </a>
+                    </div>
+                    
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/smartwatch-x-watch-preto-xswuqpi0001-pxpx/p?idsku=48350" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248637/vitrine/248637.jpg" alt="SMARTWATCH X-WATCH XSWUQPI001A PXPX PT"><br>
+                            <span class="">SMARTWATCH X-WATCH XSWUQPI001A PXPX PT<br>
+                            R$349.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">JG 7P PANELAS TRAMONTINA 28299006 PT - R$336.00</strong>
+                <a href="https://www.bemol.com.br/jogo-de-panelas-tramontina-7-pecas-linz-preto-28299006/p?idsku=57069" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/6/256465/vitrine/256465.jpg" alt="JG 7P PANELAS TRAMONTINA 28299006 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: JG 7P PANELAS TRAMONTINA 28299006 PT: O jogo de panelas Tramontina é ideal para o cliente que valoriza a utilidade doméstica e a qualidade. A marca é uma de suas preferidas e o design moderno se alinha ao seu gosto.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/jogo-de-panelas-tramontina-5-pecas-linz-rosa-28299405/p?idsku=57070" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/6/256467/vitrine/256467.jpg" alt="JG 5P PANELAS TRAMONTINA 28299405 RO"><br>
+                            <span class="">JG 5P PANELAS TRAMONTINA 28299405 RO<br>
+                            R$239.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">LIQUID BRITÂNIA DIAMANTE 800 1050W PT - R$184.00</strong>
+                <a href="https://www.bemol.com.br/liquidificador-britania-diamante-800-127v-cor-preto/p?idsku=1992" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/9/9/199072/vitrine/199072.jpg" alt="LIQUID BRITÂNIA DIAMANTE 800 1050W PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: LIQUID BRITÂNIA DIAMANTE 800 1050W PT: O liquidificador Britânia é uma excelente adição à cozinha do cliente, que já investiu em utensílios de cozinha. A potência e a funcionalidade atendem suas necessidades diárias.</div>
+                    </div>
+            <div class="produto">
+                <strong class="">MARMITA ELECTROLUX LUN BOX A15338601 PT - R$42.00</strong>
+                <a href="https://www.bemol.com.br/marmita-electrolux-lunch-box-preta-com-2-compartimentos-a15338601/p?idsku=3427" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212832/vitrine/212832.jpg" alt="MARMITA ELECTROLUX LUN BOX A15338601 PT"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: MARMITA ELECTROLUX LUN BOX A15338601 PT: A marmita Electrolux é prática e possui divisórias, atendendo à necessidade do cliente por organização e eficiência em suas refeições, além de ser uma marca confiável.</div>
+                    <div class='alternativas-titulo'>Produtos similares</div><div class='alternativas'>
+                    <div class="alternativa">
+                        <a href="https://www.bemol.com.br/marmita-electrolux-lunch-box-vermelha-com-2-compartimentos-a15338201/p?idsku=12802" target="_blank">
+                            <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/1/2/212834/vitrine/212834.jpg" alt="MARMITA ELECTROLUX LUN BOX A15338201 VM"><br>
+                            <span class="">MARMITA ELECTROLUX LUN BOX A15338201 VM<br>
+                            R$42.00</span>
+                        </a>
+                    </div>
+                    </div></div>
+            <div class="produto">
+                <strong class="">POTE MIMO HERMÉTICO 640ML 9761 - R$32.00</strong>
+                <a href="https://www.bemol.com.br/pote-mimo-hermetico-640ml-9761/p?idsku=26813" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/4/234841/vitrine/234841.jpg" alt="POTE MIMO HERMÉTICO 640ML 9761"></div>
+                </a>
+            
+                    <div class="explicabilidade">Explicação GPT: POTE MIMO HERMÉTICO 640ML 9761: O pote hermético Mimo é ideal para o cliente que valoriza a organização e a conservação de alimentos, sendo uma adição prática à sua cozinha.</div>
+                    </div><div class='off-target-titulo'>Recomendações <i>Off-target</i></div>
+            <div class="produto off-target">
+                <strong class="">TV 43 SAMSUNG SMART LED FHD UN43T5300AGX - R$1799.00</strong>
+                <a href="https://www.bemol.com.br/smart-tv-samsung-43-full-hd-led-wi-fi-hdr-e-hdmi-un43t5300agxzd/p?idsku=2497" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/6/206124/vitrine/206124.jpg" alt="TV 43 SAMSUNG SMART LED FHD UN43T5300AGX"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/caixa-de-ferramentas-stanley-preto-e-amarelo-19013/p?idsku=10718" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/4/7/147606/vitrine/147606.jpg" alt="CAIXA FERRAMENTAS STANLEY 19 19013 PT/AM"></div>
-            </a>
-            <div class=""><strong>CAIXA FERRAMENTAS STANLEY 19 19013 PT/AM</strong> - R$98.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CAIXA FERRAMENTAS STANLEY 19 19013 PT/AM: A caixa de ferramentas Stanley é ideal para o cliente que busca organização e praticidade em seus projetos de faça você mesmo, refletindo sua preferência por produtos duráveis.</div>
+            <div class="produto off-target">
+                <strong class="">BOLSA MICHAEL KORS SHOULDER JET SET G(BI - R$949.00</strong>
+                <a href="https://www.bemol.com.br/bolsa-de-ombro-michael-kors-jet-set-logo--bi-/p?idsku=56434" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/5/7/257087/vitrine/257087.jpg" alt="BOLSA MICHAEL KORS SHOULDER JET SET G(BI"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/cooktop-5-bocas-electrolux-a-gas-com-acendimento-automatico-ke5gp-bivolt/p?idsku=427" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/5/205063/vitrine/205063.jpg" alt="COOKTOP 5B ELECTROLUX GÁS KE5GP PT"></div>
-            </a>
-            <div class=""><strong>COOKTOP 5B ELECTROLUX GÁS KE5GP PT</strong> - R$802.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: COOKTOP 5B ELECTROLUX GÁS KE5GP PT: O cooktop Electrolux combina eficiência e design moderno, alinhando-se ao interesse do cliente por eletrodomésticos de qualidade e que facilitam o preparo de refeições.</div>
+            <div class="produto off-target">
+                <strong class="">SECADOR PHILCO TOURMALINE PSC2450 2200W - R$149.00</strong>
+                <a href="https://www.bemol.com.br/secador-de-cabelos-philco-bivolt-2200w-ions-tourmaline-preto-e-dourado-psc2450/p?idsku=72201" target="_blank">
+                    <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/6/3/263769/vitrine/263769.jpg" alt="SECADOR PHILCO TOURMALINE PSC2450 2200W"></div>
+                </a>
             </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/smartwatch-x-watch-preto-e-rose-xswuqpi0004-pxpx/p?idsku=48371" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248640/vitrine/248640.jpg" alt="SMARTWATCH X-WATCH XSWUQPI004A PXPX"></div>
-            </a>
-            <div class=""><strong>SMARTWATCH X-WATCH XSWUQPI004A PXPX</strong> - R$349.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: SMARTWATCH X-WATCH XSWUQPI004A PXPX: O smartwatch X-Watch é uma excelente opção para o cliente que já possui um smartphone e busca tecnologia e conectividade, complementando seu estilo de vida ativo.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/smartwatch-x-watch-preto-xswuqpi0001-pxpx/p?idsku=48350" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248637/vitrine/248637.jpg" alt="SMARTWATCH X-WATCH XSWUQPI001A PXPX PT"><br>
-                        <span class="">SMARTWATCH X-WATCH XSWUQPI001A PXPX PT<br>
-                        R$349.00</span>
-                    </a>
-                </div>
-                
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/smartwatch-x-watch-rose-xswuqpi0003-pxtx/p?idsku=48370" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/4/8/248639/vitrine/248639.jpg" alt="SMARTWATCH X-WATCH XSWUQPI003A PXTX RS"><br>
-                        <span class="">SMARTWATCH X-WATCH XSWUQPI003A PXTX RS<br>
-                        R$349.00</span>
-                    </a>
-                </div>
-                </div></div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/conjunto-de-talheres-tramontina-24-pecas-lamina-de-aco-inox-cabos-de-polipropileno-preto/p?idsku=201" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/1/3/2/132948/vitrine/132948.jpg" alt="CJ 24P TALHER TRAMONTINA 23399/091 PT"></div>
-            </a>
-            <div class=""><strong>CJ 24P TALHER TRAMONTINA 23399/091 PT</strong> - R$78.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: CJ 24P TALHER TRAMONTINA 23399/091 PT: O conjunto de talheres Tramontina é prático e de alta qualidade, ideal para o cliente que valoriza utensílios de mesa duráveis e funcionais.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/pote-mimo-hermetico-640ml-9761/p?idsku=26813" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/4/234841/vitrine/234841.jpg" alt="POTE MIMO HERMÉTICO 640ML 9761"></div>
-            </a>
-            <div class=""><strong>POTE MIMO HERMÉTICO 640ML 9761</strong> - R$32.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: TV 55 TCL SMART LED 4K UHD 55P755: A Smart TV TCL oferece uma experiência de entretenimento de alta qualidade, ideal para o cliente que busca tecnologia e conectividade em sua casa.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/purificador-de-agua-ibbl-vivax-77040001-prata/p?idsku=11977" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/0/4/204784/vitrine/204784.jpg" alt="PURIFICADOR IBBL VIVAX 77070001 PR"></div>
-            </a>
-            <div class=""><strong>PURIFICADOR IBBL VIVAX 77070001 PR</strong> - R$284.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: PURIFICADOR IBBL VIVAX 77070001 PR: O purificador IBBL é uma escolha prática e eficiente para garantir água pura, alinhando-se ao interesse do cliente por produtos que promovem saúde e bem-estar.</div>
-            </div>
-        <div class="produto">
-            <strong>[RECOMENDAÇÃO]</strong><br>
-            <a href="https://www.bemol.com.br/ventilador-de-mesa-mallory-30cm-turbo-compact-preto-e-grafite/p?idsku=26332" target="_blank">
-                <div><img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230707/vitrine/230707.jpg" alt="VENT MESA 30 MALLORY TURBO COMPACT PT/GF"></div>
-            </a>
-            <div class=""><strong>VENT MESA 30 MALLORY TURBO COMPACT PT/GF</strong> - R$126.00</div>
-        
-            <div class="explicabilidade">Explicação GPT: VENT MESA 30 MALLORY TURBO COMPACT PT/GF: O ventilador Mallory é uma solução prática e eficiente para refrescar ambientes, ideal para o cliente que busca conforto e praticidade em sua casa.</div>
-            <div class='alternativas'>
-                <div class="alternativa">
-                    <a href="https://www.bemol.com.br/ventilador-de-mesa-mallory-40cm-turbo-fresh-preto/p?idsku=26333" target="_blank">
-                        <img class="" src="https://static.bemol.com.br/wcsstore/Bemol/images/catalog/2/3/0/230708/vitrine/230708.jpg" alt="VENT MESA 40 MALLORY TURBO FRESH PT"><br>
-                        <span class="">VENT MESA 40 MALLORY TURBO FRESH PT<br>
-                        R$262.00</span>
-                    </a>
-                </div>
-                </div></div>
         <p></p>
     </body>
     </html>
